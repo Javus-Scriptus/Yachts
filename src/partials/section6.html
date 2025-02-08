@@ -12,7 +12,25 @@
             </div>
             <div class="review__slider">
                 <div class="review__slider-item">
-                    <img class="review__img" src="" alt="">
+                    <picture class="review__img">
+                        <source
+                          srcset="https://picsum.photos/id/237/400/600 1x, https://picsum.photos/id/237/800/1200 2x"
+                          media="(max-width: 420px)">
+                        
+                        <source
+                          srcset="https://picsum.photos/id/237/800/600 1x, https://picsum.photos/id/237/1600/1200 2x"
+                          media="(min-width: 421px) and (max-width: 768px)">
+                        
+                        <source
+                          srcset="https://picsum.photos/id/237/1200/800 1x, https://picsum.photos/id/237/2400/1600 2x"
+                          media="(min-width: 769px)">
+                        
+                        <img
+                          src="https://raw.githubusercontent.com/../img/section6/person-1.png"
+                          srcset=".."
+                          alt="Cute puppy">
+                      </picture>
+                      
                     <h3 class="review__item-heading">
                         John Wax
                     </h3>
