@@ -6,6 +6,7 @@
 
 .container__review {
     max-width: 1226px;
+    max-width: 1226;
     padding: auto 10px;
     margin: 0 auto;
 }
@@ -45,9 +46,6 @@ letter-spacing: -0.32px;
     display: flex;
     margin-bottom: 64px;
 }
-
-
-
 .review__slider{
     display: flex;
     gap: 30px;
@@ -91,4 +89,8 @@ font-weight: 400;
 line-height: 140%; /* 22.4px */
 letter-spacing: -0.32px;
 }
-
+    background: #1F212D;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
