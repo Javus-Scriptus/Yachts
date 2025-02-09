@@ -1,22 +1,157 @@
+@mixin text-style($font-weight: 400, $font-size: 16px, $family: 'Roboto', $line-height: 30px, $color: #000, $align: center) {
+    font-weight: $font-weight;
+    font-size: $font-size;
+    font-family: $family;
+    line-height: $line-height;
+    color: $color;
+    text-align: $align;
+    letter-spacing: 3%;
+}
+
 .section1 {
     display: flex;
-    justify-content: space-around; 
+    justify-content: space-around;
     margin-bottom: 164px;
     background-color: #1F212D;
-    
-    .section1__aside {
+    padding-top: 62px;
+    padding-bottom: 142px;
+
+    &__aside {
         width: 426px;
         height: 598px;
         background-image: url('/img/section1/aside.jpg');
-        background-repeat: no-repeat;
         border-radius: 24px;
-        background-color: #1F212D;
-        clip-path: path("M 0 0 H 100% V 95% Q 90% 100% 80% 95% Q 70% 90% 60% 95% Q 50% 100% 40% 95% Q 30% 90% 20% 95% Q 10% 100% 0 95% Z");
-        // background-color: white;
+        // box-shadow: -40px 120px 50px 0px rgba(255, 255, 255, 0.226), 20px 10px 10px 10px rgba(255, 255, 255, 0.1);
+        box-shadow:
+            -30px 20px 80px rgba(255, 255, 255, 0.2),
+            60px 120px 100px rgba(255, 255, 255, 0.259),
+            -60px 50px 80px rgba(255, 255, 255, 0.2),
+            60px 90px 100px rgba(0, 0, 0, 0.6);
+
+        .section1__picturelist {
+            display: flex;
+            width: 149px;
+            margin-top: 32px;
+
+            .section1__picture {
+                width: 56px;
+                height: 56px;
+                border-radius: 50px;
+                position: relative;
+
+                &:nth-child(1) {
+                    z-index: 3;
+                }
+
+                &:nth-child(2) {
+                    left: -11px;
+                    z-index: 2;
+                }
+
+
+                &:nth-child(3) {
+                    left: -22px;
+                    z-index: 1;
+                }
+            }
+        }
+
+        .section1__clients-title {
+            @include text-style(700, 14px, 'DM Sans', 15.4px, #11131F, left);
+            text-transform: uppercase;
+            margin-left: 32px;
+        }
+
+        .section1__picturelist2 {
+            display: block;
+
+            .section1__item {
+                position: relative;
+
+                &:nth-child(1) {
+                    width: 233px;
+                    height: 233px;
+                    left: 307px;
+                    top: -100px;
+                    border-radius: 24px;
+                }
+
+                &:nth-child(2) {
+                    width: 378px;
+                    height: 221px;
+                    top: -149px;
+                    left: -8px;
+                }
+
+            }
+        }
+
+        .section1__textlist {
+            display: flex;
+            gap: 14px;
+            position: relative;
+            top: -142px;
+            margin-left: -10px;
+
+            li {
+                .section1__price {
+                    @include text-style(400, 60px, 'DM Sans', 66px, #11131F, left);
+                }
+
+                .section1__price--description {
+                    @include text-style(400, 18px, 'DM Sans', 19.8px, #11131F, left);
+                    position: relative;
+                    top: 14px;
+
+                }
+            }
+        }
     }
-    .section1__article {
+
+    &__article {
         width: 554px;
         height: 360px;
         margin-top: 132px;
+
+        .section1__title {
+            @include text-style(500, 60px, 'DM Sans', 66px, #ffffff, left);
+            margin-bottom: 16px;
+
+            .section__span {
+                color: #ffffff80;
+                font-style: italic
+            }
+        }
+
+        .section1__description {
+            @include text-style(400, 16px, 'DM Sans', 22px, #F6F5EF, left);
+            margin-bottom: 32px;
+        }
+
+        .section1__battons {
+            display: flex;
+            gap: 11px;
+            padding: 0;
+
+            .section1__button {
+                @include text-style(700, 18px, 'DM Sans', 19px, #F6F5EF, center);
+                border-radius: 60px;
+
+            }
+
+            .button__1 {
+                width: 150px;
+                height: 48px;
+                background-color: #93ABAE;
+                border: none;
+            }
+
+            .button__2 {
+                width: 117px;
+                height: 48px;
+                border: 1px solid #F6F5EF;
+                background-color: #1F212D;
+            }
+        }
     }
 }
