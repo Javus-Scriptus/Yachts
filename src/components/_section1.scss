@@ -1,0 +1,22 @@
+.section1 {
+    display: flex;
+    justify-content: space-around; 
+    margin-bottom: 164px;
+    background-color: #1F212D;
+    
+    .section1__aside {
+        width: 426px;
+        height: 598px;
+        background-image: url('/img/section1/aside.jpg');
+        background-repeat: no-repeat;
+        border-radius: 24px;
+        background-color: #1F212D;
+        clip-path: path("M 0 0 H 100% V 95% Q 90% 100% 80% 95% Q 70% 90% 60% 95% Q 50% 100% 40% 95% Q 30% 90% 20% 95% Q 10% 100% 0 95% Z");
+        // background-color: white;
+    }
+    .section1__article {
+        width: 554px;
+        height: 360px;
+        margin-top: 132px;
+    }
+}
