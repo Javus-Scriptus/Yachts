@@ -1,5 +1,5 @@
 .catalog {
-  background: #11131f;
+  //   background: #11131f;
   width: 100vw;
 }
 
@@ -14,14 +14,22 @@
     background: #1f212d;
     display: flex;
     flex-direction: column;
-    gap: 9%;
+    gap: 5%;
     border-radius: 5%;
   }
 
-  &__img {
-    width: 90%;
+  &__pic {
+    width: 100%;
     height: 100%;
-    border-radius: 5%;
+    border-radius: 10%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__img {
+    width: 100%;
+    height: 58%;
+    border-radius: 10%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -38,7 +46,6 @@
     color: #f6f5ef;
     text-overflow: ellipsis;
     white-space: nowrap;
-    font-family: 'DM Sans';
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
@@ -50,7 +57,6 @@
   &__subheading {
     // @extend %regular-text;
     color: #f6f5ef;
-    font-family: 'DM Sans';
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -62,7 +68,6 @@
   &__type {
     // @extend %regular-text;
     color: #f6f5ef;
-    font-family: 'DM Sans';
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -74,7 +79,6 @@
   &__stats {
     // @extend %regular-text;
     color: #f6f5ef;
-    font-family: 'DM Sans';
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -89,4 +93,66 @@
   align-items: center;
   justify-content: start;
   gap: 12%;
+}
+
+//TODO desktop
+@media screen and (min-width: 1248px) {
+  .yacht {
+    display: flex;
+    gap: 1.25vw;
+    width: 100%;
+
+    &__cards {
+      width: 33%;
+      height: 60vh;
+      background: #1f212d;
+      display: flex;
+      flex-direction: column;
+      gap: 5%;
+      border-radius: 5%;
+    }
+  }
+
+  //TODO tablet
+  @media screen and (min-width: 768px) {
+    .catalog {
+      //   background: #11131f;
+      width: 100vw;
+    }
+
+    .yacht {
+      display: flex;
+      gap: 1.25vw;
+      width: 100%;
+
+      &__cards {
+        width: 50%;
+        height: 60vh;
+        background: #1f212d;
+        display: flex;
+        flex-direction: column;
+        gap: 5%;
+        border-radius: 5%;
+      }
+    }
+  }
+}
+
+//TODO mobile
+@media screen and (min-width: 320px) {
+  .yacht {
+    display: flex;
+    gap: 1.25vw;
+    width: 100%;
+
+    &__cards {
+      width: 100%;
+      height: 60vh;
+      background: #1f212d;
+      display: flex;
+      flex-direction: column;
+      gap: 5%;
+      border-radius: 5%;
+    }
+  }
 }

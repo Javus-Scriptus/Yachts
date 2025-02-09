@@ -1,0 +1,31 @@
+
+body {
+  background: #11131f !important;
+  //   overflow-x: hidden !important;
+  font-family: 'DM Sans', sans-serif !important;
+  button {
+    cursor: pointer;
+  }
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.container {
+  width: 90vw !important;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  outline: 2px solid red;
+  // overflow: hidden !important;
+}
