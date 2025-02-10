@@ -6,19 +6,18 @@
 
 .container__review {
     max-width: 1226px;
-    max-width: 1226;
     padding: auto 10px;
     margin: 0 auto;
 }
 
-.section__review{
+.section__review {
     background: #11131f;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-.review__heading{
+.review__heading {
     color: var(--white, #F6F5EF);
     font-family: "DM Sans";
     font-size: 32px;
@@ -30,67 +29,62 @@
     margin-right: 446px;
 }
 
-.review__text{
+.review__text {
     width: 273px;
     color: var(--white, #F6F5EF);
-/* main text */
-font-family: "DM Sans";
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 140%; /* 22.4px */
-letter-spacing: -0.32px;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -0.32px;
 }
 
-.review__inner-head{
+.review__inner-head {
     display: flex;
     margin-bottom: 64px;
 }
-.review__slider{
+
+
+
+.review__slider {
     display: flex;
     gap: 30px;
 }
 
-.review__slider-item{
+.review__slider-item {
     width: 384px;
-height: 282px;
-padding: 32px 25px;
-flex-direction: column;
-align-items: center;
-border-radius: 24px;
-background: #1F212D;
+    height: 282px;
+    padding: 32px 25px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 24px;
+    background: #1F212D;
 }
 
-.review__img{
+.review__img {
     align-items: center;
     margin: 0 auto;
 }
 
-.review__item-heading{
+.review__item-heading {
     color: var(--white, #F6F5EF);
-text-align: center;
-font-family: "DM Sans";
-font-size: 18px;
-font-style: normal;
-font-weight: 500;
-line-height: 110%; /* 19.8px */
-letter-spacing: -0.81px;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: -0.81px;
 }
 
-.review__item-text{
+.review__item-text {
     color: rgba(246, 245, 239, 0.50);
-text-align: center;
-
-/* main text */
-font-family: "DM Sans";
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 140%; /* 22.4px */
-letter-spacing: -0.32px;
-}
-    background: #1F212D;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -0.32px;
 }
