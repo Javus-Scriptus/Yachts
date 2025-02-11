@@ -170,3 +170,111 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .section1 {
+        flex-flow: column-reverse;
+        align-items: center;
+        padding-bottom: 80px;
+
+        &__aside {
+            width: 90%;
+            height: 120vw;
+            background-size: contain;
+
+            .section1__picturelist {
+                padding: 0;
+                margin: 0;
+                margin-top: 24px;
+                margin-left: 24px;
+            }
+
+            .section1__clients-title {
+                margin: 0;
+                margin-top: 11px;
+                margin-left: 24px;
+
+                p {
+                    @include text-style(700, 14px, 'DM Sans', 15.4px, #11131F, left);
+                }
+            }
+
+            .section1__picturelist2 {
+                padding: 0;
+                width: auto;
+                // height: 250px;
+
+                .section1__item {
+                    &:nth-child(1) {
+                        width: 133px;
+                        height: 133px;
+                        left: 50vw;
+                        top: -79px;
+                    }
+
+                    &:nth-child(2) {
+                        width: 287px;
+                        height: 167px;
+                        top: -95px;
+                        left: 0;
+                        margin: 0 auto;
+                    }
+                }
+            }
+
+            .section1__textlist {
+                margin-top: 58px;
+
+                li {
+                    .section1__price {
+                        @include text-style(400, 48px, 'DM Sans', 52.8px, #11131F, left);
+                    }
+
+                    .section1__price--description {
+                        @include text-style(400, 14px, 'DM Sans', 19.6px, #11131F, left);
+                        position: relative;
+                        top: 9px;
+
+                    }
+                }
+            }
+        }
+
+        &__article {
+            width: 90%;
+            height: 100%;
+            margin: 0 auto;
+            margin-bottom: 40px;
+
+            .section1__title {
+                @include text-style(500, 36px, 'DM Sans', 39.6px, #ffffff, left);
+                margin-bottom: 14px;
+            }
+
+            .section1__description {
+                @include text-style(400, 14px, 'DM Sans', 19.6px, #F6F5EF, left);
+                margin-bottom: 24px;
+            }
+
+            .section1__battons {
+                gap: 8px;
+                padding: 0;
+
+                .section1__button {
+                    @include text-style(700, 14px, 'DM Sans', 15.4px, #F6F5EF, center);
+
+                }
+
+                .button__1 {
+                    width: 130px;
+                    height: 43px;
+                }
+
+                .button__2 {
+                    width: 104px;
+                    height: 43px;
+                }
+            }
+        }
+    }
+}
