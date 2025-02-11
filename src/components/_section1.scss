@@ -12,40 +12,46 @@
     display: flex;
     justify-content: space-around;
     margin-bottom: 164px;
-    background-color: #1F212D;
+    background-color: #11131F;
     padding-top: 62px;
     padding-bottom: 142px;
 
     &__aside {
         width: 426px;
         height: 598px;
+        position: relative;
+        z-index: 1;
         background-image: url('https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section1/aside.png');
         background-repeat: no-repeat;
+        background-color: none;
         border-radius: 24px;
-        box-shadow:
-            -30px 20px 80px rgba(255, 255, 255, 0.2),
-            60px 120px 100px rgba(255, 255, 255, 0.259),
-            -60px 50px 80px rgba(255, 255, 255, 0.2),
-            60px 90px 100px rgba(0, 0, 0, 0.6);
+        // background: linear-gradient(to right, #f9fdff2a, #90a4ae);
+        // box-shadow:
+        //     -60px 20px 80px rgba(255, 255, 255, 0.3),
+        //     // 60px 120px 100px rgba(255, 255, 255, 0.259),
+        //     // -60px 50px 80px rgba(255, 255, 255, 0.2),
+        //     // 60px 90px 100px rgba(0, 0, 0, 0.6)
+        //     ;
 
         .section1__picturelist {
             display: flex;
             margin-top: 32px;
-            
+
             .section1__picture {
                 width: 56px;
                 height: 56px;
                 position: relative;
                 border-radius: 50px;
+
                 img {
                     border-radius: 50px;
                     border: 2px solid #93ABAE;
                 }
-                
+
                 &:nth-child(1) {
                     z-index: 3;
                 }
-                
+
                 &:nth-child(2) {
                     left: -11px;
                     z-index: 2;
@@ -62,6 +68,7 @@
         .section1__clients-title {
             text-transform: uppercase;
             margin-left: 32px;
+
             p {
                 @include text-style(700, 14px, 'DM Sans', 15.4px, #11131F, left);
             }
@@ -69,15 +76,16 @@
 
         .section1__picturelist2 {
             display: block;
-            
+
             .section1__item {
                 position: relative;
-                
+
                 &:nth-child(1) {
                     width: 233px;
                     height: 233px;
                     left: 307px;
                     top: -100px;
+
                     img {
                         border-radius: 24px;
                     }
@@ -102,7 +110,7 @@
 
             li {
                 .section1__price {
-                    @include text-style(400, 60px, 'DM Sans', 66px, #11131F, left);        
+                    @include text-style(400, 60px, 'DM Sans', 66px, #11131F, left);
                 }
 
                 .section1__price--description {
