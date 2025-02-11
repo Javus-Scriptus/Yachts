@@ -19,9 +19,9 @@
     &__aside {
         width: 426px;
         height: 598px;
-        background-image: url('/img/section1/aside.jpg');
+        background-image: url('https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section1/aside.png');
+        background-repeat: no-repeat;
         border-radius: 24px;
-        // box-shadow: -40px 120px 50px 0px rgba(255, 255, 255, 0.226), 20px 10px 10px 10px rgba(255, 255, 255, 0.1);
         box-shadow:
             -30px 20px 80px rgba(255, 255, 255, 0.2),
             60px 120px 100px rgba(255, 255, 255, 0.259),
@@ -30,19 +30,22 @@
 
         .section1__picturelist {
             display: flex;
-            width: 149px;
             margin-top: 32px;
-
+            
             .section1__picture {
                 width: 56px;
                 height: 56px;
-                border-radius: 50px;
                 position: relative;
-
+                border-radius: 50px;
+                img {
+                    border-radius: 50px;
+                    border: 2px solid #93ABAE;
+                }
+                
                 &:nth-child(1) {
                     z-index: 3;
                 }
-
+                
                 &:nth-child(2) {
                     left: -11px;
                     z-index: 2;
@@ -57,23 +60,27 @@
         }
 
         .section1__clients-title {
-            @include text-style(700, 14px, 'DM Sans', 15.4px, #11131F, left);
             text-transform: uppercase;
             margin-left: 32px;
+            p {
+                @include text-style(700, 14px, 'DM Sans', 15.4px, #11131F, left);
+            }
         }
 
         .section1__picturelist2 {
             display: block;
-
+            
             .section1__item {
                 position: relative;
-
+                
                 &:nth-child(1) {
                     width: 233px;
                     height: 233px;
                     left: 307px;
                     top: -100px;
-                    border-radius: 24px;
+                    img {
+                        border-radius: 24px;
+                    }
                 }
 
                 &:nth-child(2) {
@@ -95,7 +102,7 @@
 
             li {
                 .section1__price {
-                    @include text-style(400, 60px, 'DM Sans', 66px, #11131F, left);
+                    @include text-style(400, 60px, 'DM Sans', 66px, #11131F, left);        
                 }
 
                 .section1__price--description {
