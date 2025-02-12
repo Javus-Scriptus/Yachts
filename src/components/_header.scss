@@ -1,3 +1,6 @@
+@use "../utils/_placeholders.scss";
+@use "./https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/components/utils/_placeholders.scss";
+
 .header {
   &__logotype {
     display: flex;
@@ -13,6 +16,7 @@
   }
 
   &__link {
+    @extend %regular-text;
     color: #f6f5ef;
     font-size: 14px;
     font-weight: 700;
