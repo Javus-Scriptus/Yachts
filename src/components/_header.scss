@@ -1,0 +1,30 @@
+.header {
+  &__logotype {
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__logo {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  &__link {
+    color: #f6f5ef;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 118%; /* 16.52px */
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+  }
+
+  &__nav {
+    display: flex;
+    gap: 1.5vw;
+    align-items: center;
+    justify-content: center;
+  }
+}
