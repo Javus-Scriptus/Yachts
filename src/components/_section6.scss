@@ -104,3 +104,44 @@ img {
     right: -548px;
     top: 64px;
 }
+
+
+.slick-dots button{
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    border-radius: 50%;
+    border: 0;
+    background: #1F212D;
+    margin-right: 10px;
+    list-style: none;
+}
+
+.slick-active button{
+    background:#88B3B9;
+    width: 50px;
+    height: 19px;
+    transition: .40s;
+    border-radius: 20px;
+    border: 1px solid #010A20;
+} 
+
+.slick-dots{
+    display: flex;
+    position: relative;
+    top: 321px;
+    right: 390px;
+    list-style: none;
+    justify-content: center;
+    
+}
+
+.slick-dots li button { 
+    font-size: 0; 
+ } 
+
+@media(max-width: 768px){
+    .review__slider-item{
+        margin-left: 38px;
+    }
+}
