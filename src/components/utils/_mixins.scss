@@ -1,9 +1,0 @@
-@mixin text-style($font-weight: 400, $font-size: 16px, $family: 'Roboto', $line-height: 30px, $color: #000, $align: center) {
-    font-weight: $font-weight;
-    font-size: $font-size;
-    font-family: $family;
-    line-height: $line-height;
-    color: $color;
-    text-align: $align;
-    letter-spacing: 3%;
-}
