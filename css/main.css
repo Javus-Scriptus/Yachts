@@ -1,0 +1,13 @@
+@import url("./utils/_mixins.scss");
+@import url("./utils/_variables.scss");
+@import url("./utils/_placeholders.scss");
+@import url("./utils/_base.scss");
+@import url("./_section1.scss");
+@import url("./_section2.scss");
+@import url("./_section3.scss");
+@import url("./_section4.scss");
+@import url("./_section5.scss");
+@import url("./_section6.scss");
+@import url("./_section7.scss");
+@import url("./_section8.scss");
+@import url("./_footer.scss");
