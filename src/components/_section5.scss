@@ -16,7 +16,11 @@ padding-bottom: 164px;
     padding: auto 10px;
     margin: 0 auto;
 }
+.h2__and__img__rend__yacht{
+    width: 282px;
+}
 .h2__rend__yacht{
+    width: 282px;
     font-family: DM Sans;
     font-weight: 500;
     font-size: 60px;
@@ -26,10 +30,11 @@ padding-bottom: 164px;
 .img__rend__yacht{
     width: 282px;
     height: 191px;
-    
+    margin-top: 64px;
+    display: flex;
 }
 .form__rend__yacht{
-
+display: flex;
 }
 .input__rend__yacht{
     font-family: DM Sans;
@@ -49,10 +54,14 @@ padding-bottom: 164px;
     line-height: 19.8px;
     color: #F6F5EF;
     border-radius: 60px;
-    border: solid #F6F5EF 1px;
+    border: solid #F6F5EF 1.5px;
     background-color: transparent;
+    padding: 14px 62px 14px 28px;
+    display: flex;
 
 }
 .svg__rend__yacht{
-
+fill: #F6F5EF;
+width: 18px;
+display: flex;
 }
