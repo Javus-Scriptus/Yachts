@@ -30,7 +30,7 @@
         background-color: none;
         border-radius: 24px;
         // background: linear-gradient(to right, #f9fdff2a, #90a4ae);
-        // box-shadow:
+        // box-shadow: 
         //     -60px 20px 80px rgba(255, 255, 255, 0.3),
         //     // 60px 120px 100px rgba(255, 255, 255, 0.259),
         //     // -60px 50px 80px rgba(255, 255, 255, 0.2),
@@ -186,6 +186,13 @@
                 }
             }
         }
+    }
+
+    &__listbox {
+        display: flex;
+        width: 100%;
+        flex-basis: 100%;
+        
     }
 }
 
