@@ -164,13 +164,26 @@
                 height: 48px;
                 background-color: #93ABAE;
                 border: none;
+
+                &:hover {
+                    background: linear-gradient(to right, #f9fdff2a, #90a4ae);
+                    border: 1px solid #F6F5EF;
+                    transform: scale(1.05);
+                    transition: 200ms linear;
+                }
             }
 
             .button__2 {
                 width: 117px;
                 height: 48px;
                 border: 1px solid #F6F5EF;
-                background-color: #1F212D;
+                background-color: #11131F;
+
+                &:hover {
+                    transform: scale(1.05);
+                    transition: 200ms linear;
+                    background: linear-gradient(to right, #f9fdff2a, #90a4ae);
+                }
             }
         }
     }
