@@ -23,6 +23,13 @@
   <link rel="stylesheet" href="./components/css/slick.css">
   <link rel="stylesheet" href="./components/css/jquery.fancybox.css">
   <link rel="stylesheet" href="./components/css/style.css">
+  <!-- slick -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+    integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- boostrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -37,7 +44,7 @@
     <article class="container">
         <ul class="header__logotype">
             <li><svg class="header__icon">
-                    <use href=""></use>
+                    <use href="https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/symbol-defs.svg#logo"></use>
                 </svg></li>
             <li class="header__logo">yacht adventures</li>
         </ul>
@@ -160,8 +167,9 @@
   
   <section class="catalog">
     <article class="container">
-        <ul class="yacht">
-            <li class="yacht__cards">
+        <ul class="yacht slider">
+            <!--TODO card 1 -->
+            <li class="yacht__cards col-md-9">
                 <picture class="yacht__img">
                     <source
                         srcset="https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section3/yacht1.jpg   1x, https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section3/retinisation/yacht1@2x.jpg 2x"
@@ -198,7 +206,8 @@
                     </li>
                 </ul>
             </li>
-            <li class="yacht__cards">
+            <!--TODO card 2 -->
+            <li class="yacht__cards col-md-9">
                 <picture class="yacht__img">
                     <source
                         srcset="https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section3/yacht2.jpg   1x, https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section3/retinisation/yacht2@2x.jpg 2x"
@@ -235,7 +244,248 @@
                     </li>
                 </ul>
             </li>
-            <li class="yacht__cards">
+            <!--TODO card 3 -->
+            <li class="yacht__cards col-md-9">
+                <picture class="yacht__img">
+                    <source
+                        srcset="https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section3/yacht3.jpg   1x, https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section3/retinisation/yacht3@2x.jpg 2x"
+                        media="(max-width: 420px)">
+                    <source
+                        srcset="https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section3/yacht3.jpg  1x, https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section3/retinisation/yacht3@2x.jpg  2x"
+                        media="(min-width: 421px) and (max-width: 768px)">
+                    <source
+                        srcset="https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section3/yacht3.jpg 1x, https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section3/retinisation/yacht3@2x.jpg 2x"
+                        media="(min-width: 769px)">
+                    <img class="yacht__pic"
+                        src="https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section3/yacht3.jpg"
+                        srcset="https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section3/retinisation/yacht3@2x.jpg 2x"
+                        alt="yacht1">
+                </picture>
+
+                <ul class="yacht__name">
+                    <li class="yacht__heading">belle anna</li>
+                    <li class="yacht__subheading">luxury yachts</li>
+                </ul>
+                <ul class="description">
+                    <li class="description__product">
+                        <h3 class="yacht__type">length</h3>
+                        <h3 class="yacht__type">shipyard</h3>
+                        <h3 class="yacht__type">built</h3>
+                        <h3 class="yacht__type">guests</h3>
+                        <h3 class="yacht__type">price</h3>
+
+                    </li>
+                    <li class="description__statistics">
+                        <p class="yacht__stats">50m (155ft)</p>
+                        <p class="yacht__stats">ISA</p>
+                        <p class="yacht__stats">2012</p>
+                        <p class="yacht__stats">12 in 6 cabins</p>
+                        <p class="yacht__stats">&euro;21,000,000</p>
+                    </li>
+                </ul>
+            </li>
+            <!--TODO card 4 -->
+            <li class="yacht__cards col-md-9">
+                <picture class="yacht__img">
+                    <source
+                        srcset="https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section3/yacht3.jpg   1x, https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section3/retinisation/yacht3@2x.jpg 2x"
+                        media="(max-width: 420px)">
+                    <source
+                        srcset="https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section3/yacht3.jpg  1x, https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section3/retinisation/yacht3@2x.jpg  2x"
+                        media="(min-width: 421px) and (max-width: 768px)">
+                    <source
+                        srcset="https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section3/yacht3.jpg 1x, https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section3/retinisation/yacht3@2x.jpg 2x"
+                        media="(min-width: 769px)">
+                    <img class="yacht__pic"
+                        src="https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section3/yacht3.jpg"
+                        srcset="https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section3/retinisation/yacht3@2x.jpg 2x"
+                        alt="yacht1">
+                </picture>
+
+                <ul class="yacht__name">
+                    <li class="yacht__heading">belle anna</li>
+                    <li class="yacht__subheading">luxury yachts</li>
+                </ul>
+                <ul class="description">
+                    <li class="description__product">
+                        <h3 class="yacht__type">length</h3>
+                        <h3 class="yacht__type">shipyard</h3>
+                        <h3 class="yacht__type">built</h3>
+                        <h3 class="yacht__type">guests</h3>
+                        <h3 class="yacht__type">price</h3>
+
+                    </li>
+                    <li class="description__statistics">
+                        <p class="yacht__stats">50m (155ft)</p>
+                        <p class="yacht__stats">ISA</p>
+                        <p class="yacht__stats">2012</p>
+                        <p class="yacht__stats">12 in 6 cabins</p>
+                        <p class="yacht__stats">&euro;21,000,000</p>
+                    </li>
+                </ul>
+            </li>
+            <!--TODO card 5 -->
+            <li class="yacht__cards col-md-9">
+                <picture class="yacht__img">
+                    <source
+                        srcset="https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section3/yacht3.jpg   1x, https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section3/retinisation/yacht3@2x.jpg 2x"
+                        media="(max-width: 420px)">
+                    <source
+                        srcset="https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section3/yacht3.jpg  1x, https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section3/retinisation/yacht3@2x.jpg  2x"
+                        media="(min-width: 421px) and (max-width: 768px)">
+                    <source
+                        srcset="https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section3/yacht3.jpg 1x, https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section3/retinisation/yacht3@2x.jpg 2x"
+                        media="(min-width: 769px)">
+                    <img class="yacht__pic"
+                        src="https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section3/yacht3.jpg"
+                        srcset="https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section3/retinisation/yacht3@2x.jpg 2x"
+                        alt="yacht1">
+                </picture>
+
+                <ul class="yacht__name">
+                    <li class="yacht__heading">belle anna</li>
+                    <li class="yacht__subheading">luxury yachts</li>
+                </ul>
+                <ul class="description">
+                    <li class="description__product">
+                        <h3 class="yacht__type">length</h3>
+                        <h3 class="yacht__type">shipyard</h3>
+                        <h3 class="yacht__type">built</h3>
+                        <h3 class="yacht__type">guests</h3>
+                        <h3 class="yacht__type">price</h3>
+
+                    </li>
+                    <li class="description__statistics">
+                        <p class="yacht__stats">50m (155ft)</p>
+                        <p class="yacht__stats">ISA</p>
+                        <p class="yacht__stats">2012</p>
+                        <p class="yacht__stats">12 in 6 cabins</p>
+                        <p class="yacht__stats">&euro;21,000,000</p>
+                    </li>
+                </ul>
+            </li>
+            <!--TODO card 6 -->
+            <li class="yacht__cards col-md-9">
+                <picture class="yacht__img">
+                    <source
+                        srcset="https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section3/yacht3.jpg   1x, https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section3/retinisation/yacht3@2x.jpg 2x"
+                        media="(max-width: 420px)">
+                    <source
+                        srcset="https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section3/yacht3.jpg  1x, https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section3/retinisation/yacht3@2x.jpg  2x"
+                        media="(min-width: 421px) and (max-width: 768px)">
+                    <source
+                        srcset="https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section3/yacht3.jpg 1x, https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section3/retinisation/yacht3@2x.jpg 2x"
+                        media="(min-width: 769px)">
+                    <img class="yacht__pic"
+                        src="https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section3/yacht3.jpg"
+                        srcset="https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section3/retinisation/yacht3@2x.jpg 2x"
+                        alt="yacht1">
+                </picture>
+
+                <ul class="yacht__name">
+                    <li class="yacht__heading">belle anna</li>
+                    <li class="yacht__subheading">luxury yachts</li>
+                </ul>
+                <ul class="description">
+                    <li class="description__product">
+                        <h3 class="yacht__type">length</h3>
+                        <h3 class="yacht__type">shipyard</h3>
+                        <h3 class="yacht__type">built</h3>
+                        <h3 class="yacht__type">guests</h3>
+                        <h3 class="yacht__type">price</h3>
+
+                    </li>
+                    <li class="description__statistics">
+                        <p class="yacht__stats">50m (155ft)</p>
+                        <p class="yacht__stats">ISA</p>
+                        <p class="yacht__stats">2012</p>
+                        <p class="yacht__stats">12 in 6 cabins</p>
+                        <p class="yacht__stats">&euro;21,000,000</p>
+                    </li>
+                </ul>
+            </li>
+            <!--TODO card 7 -->
+            <li class="yacht__cards col-md-9">
+                <picture class="yacht__img">
+                    <source
+                        srcset="https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section3/yacht3.jpg   1x, https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section3/retinisation/yacht3@2x.jpg 2x"
+                        media="(max-width: 420px)">
+                    <source
+                        srcset="https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section3/yacht3.jpg  1x, https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section3/retinisation/yacht3@2x.jpg  2x"
+                        media="(min-width: 421px) and (max-width: 768px)">
+                    <source
+                        srcset="https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section3/yacht3.jpg 1x, https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section3/retinisation/yacht3@2x.jpg 2x"
+                        media="(min-width: 769px)">
+                    <img class="yacht__pic"
+                        src="https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section3/yacht3.jpg"
+                        srcset="https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section3/retinisation/yacht3@2x.jpg 2x"
+                        alt="yacht1">
+                </picture>
+
+                <ul class="yacht__name">
+                    <li class="yacht__heading">belle anna</li>
+                    <li class="yacht__subheading">luxury yachts</li>
+                </ul>
+                <ul class="description">
+                    <li class="description__product">
+                        <h3 class="yacht__type">length</h3>
+                        <h3 class="yacht__type">shipyard</h3>
+                        <h3 class="yacht__type">built</h3>
+                        <h3 class="yacht__type">guests</h3>
+                        <h3 class="yacht__type">price</h3>
+
+                    </li>
+                    <li class="description__statistics">
+                        <p class="yacht__stats">50m (155ft)</p>
+                        <p class="yacht__stats">ISA</p>
+                        <p class="yacht__stats">2012</p>
+                        <p class="yacht__stats">12 in 6 cabins</p>
+                        <p class="yacht__stats">&euro;21,000,000</p>
+                    </li>
+                </ul>
+            </li>
+            <!--TODO card 8 -->
+            <li class="yacht__cards col-md-9">
+                <picture class="yacht__img">
+                    <source
+                        srcset="https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section3/yacht3.jpg   1x, https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section3/retinisation/yacht3@2x.jpg 2x"
+                        media="(max-width: 420px)">
+                    <source
+                        srcset="https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section3/yacht3.jpg  1x, https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section3/retinisation/yacht3@2x.jpg  2x"
+                        media="(min-width: 421px) and (max-width: 768px)">
+                    <source
+                        srcset="https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section3/yacht3.jpg 1x, https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section3/retinisation/yacht3@2x.jpg 2x"
+                        media="(min-width: 769px)">
+                    <img class="yacht__pic"
+                        src="https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section3/yacht3.jpg"
+                        srcset="https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section3/retinisation/yacht3@2x.jpg 2x"
+                        alt="yacht1">
+                </picture>
+
+                <ul class="yacht__name">
+                    <li class="yacht__heading">belle anna</li>
+                    <li class="yacht__subheading">luxury yachts</li>
+                </ul>
+                <ul class="description">
+                    <li class="description__product">
+                        <h3 class="yacht__type">length</h3>
+                        <h3 class="yacht__type">shipyard</h3>
+                        <h3 class="yacht__type">built</h3>
+                        <h3 class="yacht__type">guests</h3>
+                        <h3 class="yacht__type">price</h3>
+
+                    </li>
+                    <li class="description__statistics">
+                        <p class="yacht__stats">50m (155ft)</p>
+                        <p class="yacht__stats">ISA</p>
+                        <p class="yacht__stats">2012</p>
+                        <p class="yacht__stats">12 in 6 cabins</p>
+                        <p class="yacht__stats">&euro;21,000,000</p>
+                    </li>
+                </ul>
+            </li>
+            <!--TODO card 9 -->
+            <li class="yacht__cards col-md-9">
                 <picture class="yacht__img">
                     <source
                         srcset="https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section3/yacht3.jpg   1x, https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section3/retinisation/yacht3@2x.jpg 2x"
@@ -445,10 +695,16 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
     integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!-- jquery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>  <script src="./components/js/slick.min.js"></script>
-  <script src="./components/js/jquery.fancybox.min.js"></script>
+  <!-- main js file -->
   <script src="./components/js/main.js"></script>
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="./components/js/slick.min.js"></script>
+  <script src="./components/js/jquery.fancybox.min.js"></script>
+  <!-- slick -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+    integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 
 </html>
