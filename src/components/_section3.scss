@@ -1,3 +1,8 @@
+@use 'utils/_placeholders.scss';
+@use 'utils/_mixins.scss';
+@use 'utils/_variables.scss';
+@use 'utils/_base.scss';
+
 .catalog {
   //   background: #11131f;
   width: 100vw;
@@ -41,7 +46,7 @@
   }
 
   &__heading {
-    // @extend %regular-text;
+    @extend %regular-text;
     overflow: hidden;
     color: #f6f5ef;
     text-overflow: ellipsis;
