@@ -3,16 +3,34 @@
 @use 'utils/_variables.scss';
 @use 'utils/_base.scss';
 
-.catalog {
-  //   background: #11131f;
-  width: 100vw;
+.swiper {
+  display: flex;
+  height: 70vh;
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid red;
+
+  .swiper-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    width: 29%;
+    height: 100%;
+    background: #1f212d;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    border-radius: 5%;
+  }
 }
 
 .yacht {
-  display: flex;
-  gap: 1.25vw;
-  width: 100%;
-  width: 80% !important;
+//   background: #11131f;
+  width: 100vw;
 
   &__cards {
     width: 33%;
