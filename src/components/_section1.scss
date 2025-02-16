@@ -158,6 +158,7 @@
                     height: 48px;
                     background-color: #93ABAE;
                     border: none;
+                    transition: 200ms linear;
 
                     &:hover {
                         background: linear-gradient(to right, #f9fdff2a, #90a4ae);
@@ -172,6 +173,7 @@
                     height: 48px;
                     border: 1px solid #F6F5EF;
                     background-color: #11131F;
+                    transition: 200ms linear;
 
                     &:hover {
                         transform: scale(1.05);
