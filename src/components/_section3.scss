@@ -3,7 +3,7 @@
 @use 'utils/_variables.scss';
 @use 'utils/_base.scss';
 
-.swiper {
+swiper-container {
   display: flex;
   height: 70vh;
   width: 90vw;
@@ -11,25 +11,36 @@
   margin-right: auto;
   outline: 2px solid red;
 
-  .swiper-wrapper {
-    display: flex;
-    width: 100%;
-    height: 100%;
-  }
-
-  .swiper-slide {
+  swiper-slide {
     width: 29%;
     height: 100%;
     background: #1f212d;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     gap: 5%;
     border-radius: 5%;
+
+    .yacht__img {
+      display: block;
+      width: 100%;
+      height: 58%;
+      border-radius: 10%;
+      margin-left: auto;
+      margin-right: auto;
+      object-fit: cover;
+    }
   }
+  // .swiper-wrapper {
+  //   display: flex;
+  //   width: 100%;
+  //   height: 100%;
+  // }
 }
 
 .yacht {
-//   background: #11131f;
+  //   background: #11131f;
   width: 100vw;
 
   &__cards {

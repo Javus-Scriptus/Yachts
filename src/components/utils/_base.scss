@@ -1,10 +1,11 @@
-body {
+body,
+html {
+  position: relative;
+  height: 100%;
+  width: 100%;
   background: #11131f !important;
   //   overflow-x: hidden !important;
   font-family: 'DM Sans', sans-serif !important;
-  button {
-    cursor: pointer;
-  }
   &::-webkit-scrollbar {
     display: none;
   }
@@ -28,4 +29,8 @@ body {
   align-items: center;
   outline: 2px solid red;
   // overflow: hidden !important;
+}
+
+button {
+  cursor: pointer;
 }
