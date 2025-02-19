@@ -1,0 +1,54 @@
+.section__4 {
+     background-image: url("../img/section4/draiver.jpg");
+    
+   @media (min-device-pixel-ratio: 2),
+   (-webkit-min-device-pixel-ratio: 2),
+   (min-resolution: 192dpi),
+   (min-resolution: 2dppx) {
+       .section__4 {
+               background-image: url("../img-ret@2x/draiverx2.jpg");
+       }
+   }
+}
+.section__4 {
+     background-image: url("../img/section4/fish.jpg");
+    
+   @media (min-device-pixel-ratio: 2),
+   (-webkit-min-device-pixel-ratio: 2),
+   (min-resolution: 192dpi),
+   (min-resolution: 2dppx) {
+       .section__4 {
+               background-image: url("../img-ret@2x/fishx2.jpg");
+       }
+   }
+}
+.section-img1{
+display: block;
+justify-content: space-between;
+width: 712px;
+height: 632px;
+margin-left: 400px;
+
+}
+.section-img2{
+ display: block;
+justify-content: space-between;
+width: 440px;
+height: 428px;
+margin-left: 1174px;
+margin-top:-450px;
+}
+.section-img3{
+display: block;
+justify-content: space-between;
+width: 436px;
+height: 352px;
+margin-top: 100px;
+margin-left: 750px;
+}
+.button{
+     position: absolute;
+     width: 106px;
+     height: 48px
+     
+}
