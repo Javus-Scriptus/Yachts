@@ -1,3 +1,10 @@
+import './js/app.js'
+import './js/slider.js';
+import './js/jquery-fancybox.min.js';
+import './js/slick.min.js';
+
+import './jsx/main.jsx';
+
 //TODO plese, explaine this code!!!
 $(function () {
   $('.review__slider').slick({

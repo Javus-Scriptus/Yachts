@@ -1,19 +1,23 @@
 {
-  "name": "yacht",
+  "name": "swiper-react-responsive-breakpoints",
   "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite --host",
-    "build": "vite build --base=/yacht/",
-    "preview": "vite preview"
+    "build": "vite build --base=/swiper-react-responsive-breakpoints/",
+    "preview": "vite preview",
+    "start": "vite"
   },
+  "tags": [
+    "swiper"
+  ],
   "devDependencies": {
     "glob": "^8.1.0",
     "vite": "^4.5.9"
   },
   "author": " ",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "aos": "^2.3.4",
     "body": "^5.1.0",

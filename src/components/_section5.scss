@@ -7,8 +7,9 @@
 .section__rend__yacht{
     background: #11131f;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-size: 300px;
+    background-position: bottom -0px right 0;
+    background-image: url(../img/section5/rend__yacht__ellipse.png);
 padding-bottom: 164px;
 }
 .container__rend__yacht{
@@ -16,7 +17,16 @@ padding-bottom: 164px;
     padding: auto 10px;
     margin: 0 auto;
 }
+.flexbox__rend__yacht{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.h2__and__img__rend__yacht{
+    width: 282px;
+}
 .h2__rend__yacht{
+    width: 282px;
     font-family: DM Sans;
     font-weight: 500;
     font-size: 60px;
@@ -26,18 +36,44 @@ padding-bottom: 164px;
 .img__rend__yacht{
     width: 282px;
     height: 191px;
-    
+    margin-top: 64px;
+    display: flex;
 }
 .form__rend__yacht{
-
+    width: 443px;
+    display: block;
 }
 .input__rend__yacht{
+    display: block;
     font-family: DM Sans;
     font-weight: 500;
     font-size: 16px;
     line-height: 19.2px;
+    color: #F6F5EF;
     background-color: transparent;
     border: transparent;
+    border-bottom:1px solid #F6F5EF ;
+    outline: none;
+    width: 100%;
+    padding-right: 10px;
+
+}
+.input__rend__yacht::placeholder{
+    color: #F6F5EF;
+    font-family: DM Sans, serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.2px;   
+
+}
+.input__rend__yacht:not(:last-child){
+    margin-bottom: 28px;
+    padding-bottom: 16px;
+}
+.input__rend__yacht:nth-child(4){
+    margin-bottom: 64px;
+    height: 74px;
+    resize: none;
     
 }
 .button__rend__yacht{
@@ -49,10 +85,20 @@ padding-bottom: 164px;
     line-height: 19.8px;
     color: #F6F5EF;
     border-radius: 60px;
-    border: solid #F6F5EF 1px;
+    border: solid #F6F5EF 1.5px;
     background-color: transparent;
+    padding: 14px 62px 14px 28px;
+    display: flex;
 
 }
-.svg__rend__yacht{
-
+.button__img__rend__yacht{
+width: 20px;
+height: 12px;
+margin-left: 16px;
+margin-top: 4px;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }

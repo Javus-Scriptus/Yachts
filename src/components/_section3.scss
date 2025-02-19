@@ -3,16 +3,69 @@
 @use 'utils/_variables.scss';
 @use 'utils/_base.scss';
 
-.catalog {
-  //   background: #11131f;
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
   width: 100vw;
 }
 
-.yacht {
+.swiper {
+  width: 90vw;
+  height: 70vh;
   display: flex;
-  gap: 1.25vw;
-  width: 100%;
-  width: 80% !important;
+  align-items: center;
+  justify-content: center;
+  overflow-y: scroll;
+  transition: all 0.7s ease-in-out;
+
+    &:hover {
+      transform: scale(0.9);
+    }
+}
+
+swiper-container {
+  display: flex;
+  height: 70vh;
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid red;
+
+  swiper-slide {
+    overflow: hidden;
+    position: relative;
+    width: 29%;
+    height: 100%;
+    background: #1f212d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5%;
+    border-radius: 5%;
+
+    .yacht__img {
+      display: block;
+      width: 100%;
+      height: 58%;
+      border-radius: 10%;
+      margin-left: auto;
+      margin-right: auto;
+      object-fit: cover;
+    }
+  }
+  // .swiper-wrapper {
+  //   display: flex;
+  //   width: 100%;
+  //   height: 100%;
+  // }
+}
+
+.yacht {
+  //   background: #11131f;
+  width: 100vw;
 
   &__cards {
     width: 33%;
@@ -38,6 +91,7 @@
     border-radius: 10%;
     margin-left: auto;
     margin-right: auto;
+    object-fit: cover;
   }
 
   &__name {
