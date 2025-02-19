@@ -1,5 +1,5 @@
 <section class="section__rend__yacht">
-  <div class="container__rend__yacht">
+  <div class="container__rend__yacht flexbox__rend__yacht">
     <div class="h2__and__img__rend__yacht">
     <h2 class="h2__rend__yacht">Rent a yacht now</h2>
     <img class="img__rend__yacht" src="../img/section5/img-yacht-rend.webp" alt="" />
@@ -8,14 +8,12 @@
   
   <input class="input__rend__yacht input__rent_yacht__3" required type="text" autocomplete="name" placeholder="Full Name" />
   <input class="input__rend__yacht input__rent_yacht__1" required type="email" autocomplete="email" placeholder="Email" />
-  <input class="input__rend__yacht input__rent_yacht__2" required type="number" placeholder="Phone number" />
-  <input class="input__rend__yacht input__rent_yacht__4" required type="text" placeholder="Comment" />
+  <input class="input__rend__yacht input__rent_yacht__2" required type="number" placeholder="Phone number" min="0" />
+  <textarea class="input__rend__yacht input__rent_yacht__4" required type="text" placeholder="Comment" maxlength="130"></textarea>
 
-  <button class="button__rend__yacht" type="button">
+  <button class="button__rend__yacht" type="submit">
     Send
-    <svg class="svg__rend__yacht">
-      <use href="../img/section5/symbol-defs.svg"></use>
-    </svg>
+    <img class="button__img__rend__yacht" src="../img/section5/arrow.svg" alt="">
   </button>
 </form>
 </div>
