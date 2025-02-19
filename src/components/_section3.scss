@@ -18,7 +18,11 @@ section {
   align-items: center;
   justify-content: center;
   overflow-y: scroll;
+  transition: all 0.7s ease-in-out;
 
+    &:hover {
+      transform: scale(0.9);
+    }
 }
 
 swiper-container {
