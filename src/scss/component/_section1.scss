@@ -1,7 +1,7 @@
-@use '/scss/utils/_placeholders.scss';
-@use '/scss/utils/_mixins.scss';
-@use '/scss/utils/_variables.scss';
-@use '/scss/utils/_base.scss';
+// @use '/scss/utils/_placeholders.scss';
+// @use '/scss/utils/_mixins.scss';
+// @use '/scss/utils/_variables.scss';
+// @use '/scss/utils/_base.scss';
 
 @mixin text-style($font-weight: 400, $font-size: 16px, $family: 'Roboto', $line-height: 30px, $color: #000, $align: center) {
     font-weight: $font-weight;

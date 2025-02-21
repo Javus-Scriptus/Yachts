@@ -5,10 +5,10 @@ const swiper = new Swiper('.swiper', {
   lazyloading: true,
   // effect: 'fade',
   freeMode: false,
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 5000,
+  //   disableOnInteraction: false,
+  // },
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
@@ -23,7 +23,7 @@ const swiper = new Swiper('.swiper', {
   breakpoints: {
     320: {
       slidesPerView: 1,
-      spaceBetween: 0,
+      spaceBetween: 50,
     },
     768: {
       slidesPerView: 2,
