@@ -24,31 +24,58 @@
 }
 .section-img1{
 display: block;
+position: relative;
 justify-content: space-between;
 width: 712px;
 height: 632px;
-margin-left: 400px;
+margin-left: -300px;
+
 
 }
 .section-img2{
  display: block;
+ position: relative;
 justify-content: space-between;
 width: 440px;
 height: 428px;
-margin-left: 1174px;
-margin-top:-450px;
+margin-left: 64px;
+
+
 }
 .section-img3{
 display: block;
+position: relative;
 justify-content: space-between;
 width: 436px;
 height: 352px;
-margin-top: 100px;
-margin-left: 750px;
+margin-top: 1100px;
+margin-left: -850px;
+
 }
-.button{
+.button1{
+  position: absolute;
+  width: 106px;
+  height: 48px;
+  border-radius: 40px;
+  top: 550px;
+  left: 50px;
+
+}
+
+.button2{
      position: absolute;
      width: 106px;
-     height: 48px
-     
+     height: 48px;
+     border-radius: 40px;
+     top: 350px;
+     left: 50px;
+}
+.button3{
+  position: absolute;
+  width: 106px;
+  height: 48px;
+  border-radius: 40px;
+  top: 270px;
+  left: 50px;
+
 }
