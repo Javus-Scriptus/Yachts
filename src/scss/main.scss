@@ -4,10 +4,10 @@
 // @use "./utils/_variables.scss" as *;
 // @use "./utils/_placeholder.scss" as *;
 
-@import url('./scss/utils/_mixins.scss');
-@import url('./scss/utils/_variables.scss');
-@import url('./scss/utils/_placeholders.scss');
-@import url('./scss/utils/_base.scss');
+@import url('./utils/_mixins.scss');
+@import url('./utils/_variables.scss');
+@import url('./utils/_placeholders.scss');
+@import url('./utils/_base.scss');
 
 @import url('./scss/component/_section1.scss');
 @import url('./scss/component/_section2.scss');
