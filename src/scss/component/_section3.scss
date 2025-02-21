@@ -12,207 +12,37 @@
 // }
 
 .swiper {
-  width: 90vw;
+  width: 100%;
+  max-width: 1800px;
   height: 70vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow-y: scroll;
-  transition: all 0.7s ease-in-out;
-
-    &:hover {
-      transform: scale(0.9);
-    }
+  outline: 2px solid blue;
 }
 
-swiper-container {
-  display: flex;
-  height: 70vh;
-  width: 90vw;
-  margin-left: auto;
-  margin-right: auto;
+.swiper-slide {
   outline: 2px solid red;
+  // @extend %bg-styles;
+  // flex-direction: column;
+  // object-fit: cover;
+  border-radius: 5px;
+  transition: all 0.7s ease-in-out;
+  // overflow: hidden;
+  // position: relative;
+  background: #1f212d;
+  // gap: 5%;
+  // border-radius: 5%;
 
-  swiper-slide {
-    overflow: hidden;
-    position: relative;
-    width: 29%;
-    height: 100%;
-    background: #1f212d;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 5%;
-    border-radius: 5%;
-
-    .yacht__img {
-      display: block;
-      width: 100%;
-      height: 58%;
-      border-radius: 10%;
-      margin-left: auto;
-      margin-right: auto;
-      object-fit: cover;
-    }
-  }
-  // .swiper-wrapper {
-  //   display: flex;
-  //   width: 100%;
-  //   height: 100%;
+  // &:hover {
+    // transform: scale(0.9);
   // }
 }
 
-.yacht {
-  //   background: #11131f;
-  width: 100vw;
+// .yacht__img {
+//   display: block;
+  // width: 100%;
+//   height: 58%;
+//   border-radius: 10%;
+//   margin-left: auto;
+//   margin-right: auto;
+//   object-fit: cover;
+// }
 
-  &__cards {
-    width: 33%;
-    height: 60vh;
-    background: #1f212d;
-    display: flex;
-    flex-direction: column;
-    gap: 5%;
-    border-radius: 5%;
-  }
-
-  &__pic {
-    width: 100%;
-    height: 100%;
-    border-radius: 10%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  &__img {
-    width: 100%;
-    height: 58%;
-    border-radius: 10%;
-    margin-left: auto;
-    margin-right: auto;
-    object-fit: cover;
-  }
-
-  &__name {
-    width: 93%;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  &__heading {
-    @extend %regular-text;
-    overflow: hidden;
-    color: #f6f5ef;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 120%;
-    letter-spacing: -0.72px;
-    text-transform: uppercase;
-  }
-
-  &__subheading {
-    // @extend %regular-text;
-    color: #f6f5ef;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 118%;
-    letter-spacing: 0.36px;
-    text-transform: uppercase;
-  }
-
-  &__type {
-    // @extend %regular-text;
-    color: #f6f5ef;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 118%;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
-  }
-
-  &__stats {
-    // @extend %regular-text;
-    color: #f6f5ef;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 118%;
-    letter-spacing: 0.42px;
-  }
-}
-
-.description {
-  outline: 2px solid red;
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  gap: 12%;
-}
-
-//TODO desktop
-@media screen and (min-width: 1248px) {
-  .yacht {
-    display: flex;
-    gap: 1.25vw;
-    width: 100%;
-
-    &__cards {
-      width: 33%;
-      height: 60vh;
-      background: #1f212d;
-      display: flex;
-      flex-direction: column;
-      gap: 5%;
-      border-radius: 5%;
-    }
-  }
-
-  //TODO tablet
-  @media screen and (min-width: 768px) {
-    .catalog {
-      //   background: #11131f;
-      width: 100vw;
-    }
-
-    .yacht {
-      display: flex;
-      gap: 1.25vw;
-      width: 100%;
-
-      &__cards {
-        width: 50%;
-        height: 60vh;
-        background: #1f212d;
-        display: flex;
-        flex-direction: column;
-        gap: 5%;
-        border-radius: 5%;
-      }
-    }
-  }
-}
-
-//TODO mobile
-@media screen and (min-width: 320px) {
-  .yacht {
-    display: flex;
-    gap: 1.25vw;
-    width: 100%;
-
-    &__cards {
-      width: 100%;
-      height: 60vh;
-      background: #1f212d;
-      display: flex;
-      flex-direction: column;
-      gap: 5%;
-      border-radius: 5%;
-    }
-  }
-}

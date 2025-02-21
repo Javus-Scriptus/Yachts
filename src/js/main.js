@@ -1,11 +1,8 @@
-import './js/app.js'
-import './js/slider.js';
-import './js/jquery-fancybox.min.js';
-import './js/slick.min.js';
+// import './js/slider.js';
+// import './js/jquery-fancybox.min.js';
+// import './js/slick.min.js';
 
-import './jsx/main.jsx';
-
-//TODO plese, explaine this code!!!
+//TODO please, explaine this code!!!
 $(function () {
   $('.review__slider').slick({
     infinite: true,
@@ -28,41 +25,4 @@ $(function () {
       },
     ],
   });
-});
-
-//TODO responsive slider
-$('.slider').slick({
-  dots: true,
-  infinite: false,
-  speed: 300,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  responsive: [
-    {
-      breakpoint: 1248,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: true,
-      },
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-      },
-    },
-    {
-      breakpoint: 320,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      },
-    },
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  ],
 });

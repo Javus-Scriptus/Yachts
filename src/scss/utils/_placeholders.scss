@@ -7,11 +7,18 @@
   letter-spacing: 0.3px;
 }
 
-%container {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+%centering {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+%bg-styles {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-clip: content-box;
+  object-fit: cover;
 }
