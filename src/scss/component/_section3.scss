@@ -1,15 +1,15 @@
-@use 'utils/_placeholders.scss';
-@use 'utils/_mixins.scss';
-@use 'utils/_variables.scss';
-@use 'utils/_base.scss';
+@use 'scss/utils/_placeholders.scss';
+@use 'scss/utils/_mixins.scss';
+@use 'scss/utils/_variables.scss';
+@use 'scss/utils/_base.scss';
 
-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  width: 100vw;
-}
+// section {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   height: 100vh;
+//   width: 100vw;
+// }
 
 .swiper {
   width: 90vw;
