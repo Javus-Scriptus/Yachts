@@ -1,18 +1,33 @@
 (() => {
-    const refs = {
-      openModalBtn: document.querySelector("[data-modal-open]"),
-      closeModalBtn: document.querySelector("[data-modal-close]"),
-      modal: document.querySelector("[data-modal]"),
-    };
-    console.log(refs.modal);
-    console.log(refs.openModalBtn);
-    console.log(refs.closeModalBtn);
-  
-    refs.openModalBtn.addEventListener("click", toggleModal);
-    refs.closeModalBtn.addEventListener("click", toggleModal);
-  
-    function toggleModal() {
-      refs.modal.classList.toggle("is-hidden");
-      document.body.classList.toggle("no-scroll");
+  const refs = {
+    form: document.querySelector('.form__rend__yacht'),
+    modal: document.querySelector('[data-modal]'),
+    closeModalBtn: document.querySelector('[data-modal-close]'),
+  };
+
+  // Обробка відправки форми
+  refs.form.addEventListener('submit', function (event) {
+    event.preventDefault(); // Зупиняємо стандартну відправку форми
+
+    // Очищаємо форму
+    refs.form.reset();
+
+    // Відкриваємо модальне вікно
+    toggleModal();
+  });
+
+  // Закриття модального вікна
+  refs.closeModalBtn.addEventListener('click', toggleModal);
+
+  // Закриття модального вікна при кліку поза ним
+  refs.modal.addEventListener('click', function (event) {
+    if (event.target === refs.modal) {
+      toggleModal();
     }
-  })();  
+  });
+
+  function toggleModal() {
+    refs.modal.classList.toggle('is-hidden');
+    document.body.classList.toggle('no-scroll');
+  }
+})();
