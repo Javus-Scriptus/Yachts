@@ -11,11 +11,19 @@
   <input class="input__rend__yacht input__rent_yacht__2" required type="number" placeholder="Phone number" min="0" />
   <textarea class="input__rend__yacht input__rent_yacht__4" required type="text" placeholder="Comment" maxlength="130"></textarea>
 
-  <button class="button__rend__yacht" type="submit">
+  <button class="button__rend__yacht" type="submit" data-modal-open>
     Send
     <img class="button__img__rend__yacht" src="../img/section5/arrow.svg" alt="">
   </button>
 </form>
 </div>
 </section>
+<div class="is-hidden" data-modal>
+<div class="thanks__modal__send__yacht">
+  <button class="thanks__button__yacht__send" type="button" data-modal-close></button>
+  <img class="thanks__yacht__img" src="../img/section5/thanks-yacht-img.png" alt="">
+  <h4 class="thanks__h4__yacht__rend">Thank you</h4>
+  <p class="thanks__p__yacht__rend">Thank you for choosing Yacht Adventures, your booking details have been received and our team will be in touch shortly to confirm your reservation and provide any additional information or assistance you may need.</p>
+</div>
+</div>
 <script src="../js/thanks.js"></script>
