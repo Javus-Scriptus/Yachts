@@ -109,7 +109,10 @@ input[type='number']::-webkit-inner-spin-button {
 .is-hidden {
   display: none;
 }
-
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
 .thanks__modal__send__yacht {
   position: absolute;
   top: 50%;
@@ -122,7 +125,6 @@ input[type='number']::-webkit-inner-spin-button {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 .box__modal {
-  outline: 1px solid red;
   width: 570px;
   height: 522px;
 }
@@ -136,27 +138,33 @@ input[type='number']::-webkit-inner-spin-button {
 }
 
 .thanks__yacht__img {
-  width: 100px;
-  margin-bottom: 20px;
+  width: 338px;
+  height: 198px;
 }
-
+.thanks__text {
+  text-align: left;
+  margin-left: 64px;
+  margin-right: 64px;
+}
 .thanks__h2__yacht__rend {
-    font-family: DM Sans;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 38.4px;  
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38.4px;
 }
 
 .thanks__p__yacht__rend {
-    font-family: DM Sans;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22.4px; 
+  font-family: DM Sans;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22.4px;
+  margin-top: 16px;
 }
-.thanks__close__icon{
-    display: block;
-    margin-top: 32px;
-    margin-right: 32px;
-    width: 24px;
-    height: 24px;
+.thanks__close__icon {
+  display: flex;
+  margin-top: 32px;
+  margin-right: 32px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
 }
