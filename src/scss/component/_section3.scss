@@ -34,7 +34,7 @@
 @media screen and (min-width: 320px) {
   .swiper {
     width: 100%;
-    max-width: 90vw;
+    max-width: 80vw;
     height: 85vh;
     // outline: 2px solid blue;
   }
@@ -57,6 +57,20 @@
     cursor: default;
   }
 
+  .swiper-button-prev::after {
+    content: 'https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section3/arrow-right.svg' !important;
+    height: 7px !important;
+    width: 7px !important;
+    color: #f6f5ef;
+  }
+
+  .swiper-button-next::after {
+    content: '';
+    height: 7px !important;
+    width: 7px !important;
+  }
+
+  // section styles
   .yacht {
     &__pic {
       display: block;
@@ -188,7 +202,7 @@
   .swiper {
     width: 100%;
     max-width: 1650px;
-    height: 75vh;
+    height: 82vh;
     outline: 2px solid green;
     // outline: 2px solid blue;
   }
@@ -202,13 +216,12 @@
   }
 
   .yacht {
-
     .benetti {
       margin-right: 2.5vw;
     }
 
     &__name {
-      margin-left: 3vw;
+      margin-left: 2.5vw;
       margin-bottom: 7vh;
     }
 
