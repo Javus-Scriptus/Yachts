@@ -1,17 +1,19 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
+<symbol id="arrow-left" viewBox="0 0 42 32">
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.8421" d="M15.436 0.985h11.234c8.292 0 15.015 6.722 15.015 15.015v0c0 8.292-6.722 15.015-15.015 15.015h-11.234c-8.292 0-15.015-6.722-15.015-15.015v-0c0-8.292 6.722-15.015 15.015-15.015z"></path>
+<path d="M24 12.354l4.632 3.646-4.632 3.646v-3.015h-10.526v-1.263h10.526v-3.015z"></path>
+</symbol>
+<symbol id="arrow-right" viewBox="0 0 42 32">
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.8421" d="M15.436 0.985h11.234c8.292 0 15.015 6.722 15.015 15.015v0c0 8.292-6.722 15.015-15.015 15.015h-11.234c-8.292 0-15.015-6.722-15.015-15.015v-0c0-8.292 6.722-15.015 15.015-15.015z"></path>
+<path d="M18.105 12.354l-4.632 3.646 4.632 3.646v-3.015h10.526v-1.263h-10.526v-3.015z"></path>
+</symbol>
 <symbol id="logo" viewBox="0 0 32 32">
 <path d="M0 0h32v32h-32v-32z"></path>
 </symbol>
 <symbol id="arrow-up" viewBox="0 0 32 32">
 <path fill="#93abae" style="fill: var(--color1, #93abae)" d="M3.765 0h24.471c2.079 0 3.765 1.686 3.765 3.765v24.471c0 2.079-1.686 3.765-3.765 3.765h-24.471c-2.079 0-3.765-1.686-3.765-3.765v-24.471c0-2.079 1.686-3.765 3.765-3.765z"></path>
 <path fill="#f6f5ef" style="fill: var(--color2, #f6f5ef)" d="M12.235 13.255l3.765-4.314 3.765 4.314h-3.113v9.804h-1.304v-9.804h-3.113z"></path>
-</symbol>
-<symbol id="arrow-left" viewBox="0 0 32 32">
-<path d="M9.778 8.302l-9.778 7.698 9.778 7.698v-6.365h22.222v-2.667h-22.222v-6.365z"></path>
-</symbol>
-<symbol id="arrow-right" viewBox="0 0 32 32">
-<path d="M22.222 8.302l9.778 7.698-9.778 7.698v-6.365h-22.222v-2.667h22.222v-6.365z"></path>
 </symbol>
 <symbol id="facebook" viewBox="0 0 32 32">
 <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.8" d="M4.8 0.4h22.4c2.43 0 4.4 1.97 4.4 4.4v22.4c0 2.43-1.97 4.4-4.4 4.4h-22.4c-2.43 0-4.4-1.97-4.4-4.4v-22.4c0-2.43 1.97-4.4 4.4-4.4z"></path>
