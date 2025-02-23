@@ -1,13 +1,17 @@
-@use '/scss/utils/_placeholders.scss';
-@use '/scss/utils/_placeholders.scss';
-@use '/scss/utils/_base.scss';
+// @use '/scss/utils/_placeholders.scss';
+// @use '/scss/utils/_placeholders.scss';
+// @use '/scss/utils/_base.scss';
 
-header {
-  padding-top: 4vh;
-  padding-bottom: 4vh;
+.header {
+  // padding-top: 4vh;
+  // padding-bottom: 4vh;
 
-  .container {
+  &__container {
+    outline: 2px solid red;
     justify-content: space-between;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   &__logotype {
@@ -30,7 +34,7 @@ header {
   }
 
   &__link {
-    @extend %regular-text;
+    // @extend %regular-text;
     color: #f6f5ef;
     font-size: 14px;
     font-weight: 700;
@@ -45,4 +49,50 @@ header {
     align-items: center;
     justify-content: center;
   }
+}
+
+// TODO mobile
+@media screen and (min-width: 320px) {
+  .header {
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+
+    &__logotype {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3.5vw;
+      width: 70%;
+    }
+
+    &__icon {
+      margin-top: 1vh;
+      width: 18px;
+      height: 18px;
+      outline: 2px solid red;
+    }
+
+    &__nav {
+      display: none;
+    }
+  }
+}
+
+// TODO tablet
+@media screen and (min-width: 768px) {
+  .header {
+    display: flex;
+
+    &__logotype {
+      width: 29%;
+    }
+
+    &__nav {
+      display: flex;
+    }
+  }
+}
+
+// TODO desktop
+@media screen and (min-width: 1024px) {
 }
