@@ -224,127 +224,115 @@
             padding: 0;
             padding-bottom: 13.021vw;
             padding-top: 8.333vw;
+        }
+    }
 
-            .section1__aside {
-                width: 60%;
-                height: 90vw;
-                background-size: contain;
-                margin-left: 4.167vw;
+    .card {
+        width: 60%;
+        height: 90vw;
+        background-size: contain;
+        margin-left: 4.167vw;
 
-                .section1__picturelist {
-                    padding: 0;
-                    margin: 0;
-                    margin-top: 4.167vw;
-                    margin-left: 4.167vw;
+        &__picturelist {
+            padding: 0;
+            margin: 0;
+            margin-top: 4.167vw;
+            margin-left: 4.167vw;
 
-                }
+        }
 
-                p {
-                    @include text-style(700, 14px, 'DM Sans', 15.4px, #11131F, left);
-                }
+        p {
+            @include text-style(700, 14px, 'DM Sans', 15.4px, #11131F, left);
+        }
 
-                .section1__clients-title {
-                    margin: 0;
-                    margin-top: 1.432vw;
-                    margin-left: 4.167vw;
-                }
+        &__clients-title {
+            margin: 0;
+            margin-top: 1.432vw;
+            margin-left: 4.167vw;
+        }
 
-                .section1__picturelist2 {
-                    padding: 0;
-                    width: auto;
+        &__picturebox {
+            padding: 0;
+            width: auto;
 
-                    .section1__item {
-                        &:nth-child(1) {
-                            width: 233px;
-                            height: 233px;
-                            left: 45vw;
-                            top: -79px;
-                        }
-
-                        &:nth-child(2) {
-                            width: 49.219vw;
-                            height: 28.776vw;
-                            top: -15vw;
-                            left: 0;
-                            margin: 0 auto;
-                        }
-                    }
-                }
-
-                .section1__textlist {
-                    margin-top: 7.552vw;
-
-
-                    li {
-                        .section1__price {
-                            @include text-style(400, 60px, 'DM Sans', 66px, #11131F, left);
-                        }
-
-                        .section1__price--description {
-                            @include text-style(400, 18px, 'DM Sans', 19.8px, #11131F, left);
-                            position: relative;
-                            top: 9px;
-
-                        }
-                    }
-                }
+            &--person {
+                width: 233px;
+                height: 233px;
+                left: 45vw;
+                top: -79px;
             }
 
-            .section1__article {
-                width: 90%;
-                height: 100%;
+            &--yacht {
+                width: 49.219vw;
+                height: 28.776vw;
+                top: -15vw;
+                left: 0;
                 margin: 0 auto;
-                margin-bottom: 8.333vw;
-
-                .section1__title {
-                    @include text-style(500, 36px, 'DM Sans', 39.6px, #ffffff, left);
-                    margin-bottom: 2.083vw;
-                }
-
-                .section1__description {
-                    @include text-style(400, 14px, 'DM Sans', 19.6px, #F6F5EF, left);
-                    margin-bottom: 3.125vw;
-                    width: 70.182vw;
-                }
-
-                .section1__battons {
-                    gap: 1.432vw;
-                    padding: 0;
-
-                    .section1__button {
-                        @include text-style(700, 14px, 'DM Sans', 15.4px, #F6F5EF, center);
-                    }
-                }
             }
         }
 
+        &__text {
+            margin-top: 7.552vw;
 
-        &__listbox {
-            justify-content: end;
-            height: 426px;
-            margin-bottom: 8.333vw;
+            &--price {
+                @include text-style(400, 60px, 'DM Sans', 66px, #11131F, left);
+            }
 
-            .section1__listitem {
-                &:nth-of-type(1) {
-                    width: 66.927vw;
-                    margin-right: 39.323vw;
-                    margin-bottom: 4.167vw;
+            &--description {
+                @include text-style(400, 18px, 'DM Sans', 19.8px, #11131F, left);
+                position: relative;
+                top: 9px;
+            }
+        }
+    }
 
-                    .section1__text {
-                        width: 66.927vw;
-                        margin-right: -10.677vw;
-                    }
-                }
+    .textbox {
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+        margin-bottom: 8.333vw;
 
-                &:nth-of-type(2) {
-                    width: 23.828vw;
-                    margin-right: 4.167vw;
-                }
+        &__title {
+            @include text-style(500, 36px, 'DM Sans', 39.6px, #ffffff, left);
+            margin-bottom: 2.083vw;
+        }
 
-                &:nth-of-type(3) {
-                    width: 24.089vw;
-                    margin-right: 4.167vw;
-                }
+        &__description {
+            @include text-style(400, 14px, 'DM Sans', 19.6px, #F6F5EF, left);
+            margin-bottom: 3.125vw;
+            width: 70.182vw;
+        }
+
+        &__buttons {
+            gap: 1.432vw;
+            padding: 0;
+
+            &--start,
+            &--explore {
+                @include text-style(700, 14px, 'DM Sans', 15.4px, #F6F5EF, center);
+            }
+        }
+    }
+
+    .listbox {
+        justify-content: end;
+        
+        &__item {
+            padding-bottom: 4.167vw;
+
+            &--yacht {
+                position: relative;
+                width: 66.927vw;
+                left: 10vw;
+            }
+            
+            &--description {
+                width: 23.828vw;
+                margin-right: 4.167vw;
+            }
+            
+            &--crew {
+                width: 24.089vw;
             }
         }
     }
@@ -359,143 +347,133 @@
             padding: 0;
             padding-bottom: 21.333vw;
             padding-top: 10.667vw;
+        }
+    }
 
-            .section1__aside {
-                width: 90%;
-                height: 120vw;
-                background-size: contain;
+    .card {
+        width: 90%;
+        height: 120vw;
+        background-size: contain;
 
-                .section1__picturelist {
-                    padding: 0;
-                    margin: 0;
-                    margin-top: 6.4vw;
-                    margin-left: 6.4vw;
-                }
+        &__picturelist {
+            padding: 0;
+            margin: 0;
+            margin-top: 6.4vw;
+            margin-left: 6.4vw;
+        }
 
-                p {
-                    @include text-style(700, 14px, 'DM Sans', 15.4px, #11131F, left);
-                }
+        p {
+            @include text-style(700, 14px, 'DM Sans', 15.4px, #11131F, left);
+        }
 
-                .section1__clients-title {
-                    margin: 0;
-                    margin-top: 2.933vw;
-                    margin-left: 6.4vw;
+        &__clients-title {
+            margin: 0;
+            margin-top: 2.933vw;
+            margin-left: 6.4vw;
 
-                }
+        }
 
-                .section1__picturelist2 {
-                    padding: 0;
-                    width: auto;
+        &__picturebox {
+            padding: 0;
+            width: auto;
 
-                    .section1__item {
-                        &:nth-child(1) {
-                            width: 35.467vw;
-                            height: 35.467vw;
-                            left: 55vw;
-                            top: -79px;
-                        }
-
-                        &:nth-child(2) {
-                            width: 76.533vw;
-                            height: 44.533vw;
-                            top: -25.333vw;
-                            left: 0;
-                            margin: 0 auto;
-                        }
-                    }
-                }
-
-                .section1__textlist {
-                    margin-top: 15.467vw;
-
-                    li {
-                        .section1__price {
-                            @include text-style(400, 48px, 'DM Sans', 52.8px, #11131F, left);
-                        }
-
-                        .section1__price--description {
-                            @include text-style(400, 14px, 'DM Sans', 19.6px, #11131F, left);
-                            position: relative;
-                            top: 2.4vw;
-
-                        }
-                    }
-                }
+            &--person {
+                width: 35.467vw;
+                height: 35.467vw;
+                left: 55vw;
+                top: -79px;
             }
 
-            .section1__article {
-                width: 90%;
-                height: 100%;
+            &--yacht {
+                width: 76.533vw;
+                height: 44.533vw;
+                top: -25.333vw;
+                left: 0;
                 margin: 0 auto;
-                margin-bottom: 10.667vw;
-
-                .section1__title {
-                    @include text-style(500, 36px, 'DM Sans', 39.6px, #ffffff, left);
-                    margin-bottom: 3.733vw;
-                }
-
-                .section1__description {
-                    @include text-style(400, 14px, 'DM Sans', 19.6px, #F6F5EF, left);
-                    margin-bottom: 6.4vw;
-                }
-
-                .section1__battons {
-                    gap: 2.133vw;
-                    padding: 0;
-
-                    .section1__button {
-                        @include text-style(700, 14px, 'DM Sans', 15.4px, #F6F5EF, center);
-
-                    }
-
-                    .button__1 {
-                        width: 130px;
-                        height: 43px;
-                    }
-
-                    .button__2 {
-                        width: 104px;
-                        height: 43px;
-                    }
-                }
             }
         }
 
-        &__listbox {
-            justify-content: center;
-            height: 405px;
-            margin: 0;
+        &__text {
+            margin-top: 15.467vw;
+
+            &--price {
+                @include text-style(400, 48px, 'DM Sans', 52.8px, #11131F, left);
+            }
+
+            &--description {
+                @include text-style(400, 14px, 'DM Sans', 19.6px, #11131F, left);
+                width: 46.067vw;
+                position: relative;
+                top: -2.4vw;
+            }
+        }
+    }
+
+    .textbox {
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+        margin-bottom: 10.667vw;
+
+        &__title {
+            @include text-style(500, 36px, 'DM Sans', 39.6px, #ffffff, left);
+            margin-bottom: 3.733vw;
+        }
+
+        &__description {
+            @include text-style(400, 14px, 'DM Sans', 19.6px, #F6F5EF, left);
+            margin-bottom: 6.4vw;
+        }
+
+        &__buttons {
+            gap: 2.133vw;
             padding: 0;
-            margin-bottom: 10.667vw;
 
-            .section1__listitem {
-                .section1__text {
-                    @include text-style(400, 14px, 'DM Sans', 19.6px, #F6F5EF99, left);
-                }
+            &--start {
+                @include text-style(700, 14px, 'DM Sans', 15.4px, #F6F5EF, center);
+                width: 130px;
+                height: 43px;
+            }
 
-                &:nth-of-type(1) {
-                    margin: 0 auto;
-                    width: 89.333vw;
-                    height: 145px;
+            &--explore {
+                @include text-style(700, 14px, 'DM Sans', 15.4px, #F6F5EF, center);
+                width: 104px;
+                height: 43px;
+            }
+        }
+    }
 
-                    .section1__text {
-                        width: 89.333vw;
-                        margin-right: -25.867vw;
-                        @include text-style(400, 24px, 'DM Sans', 28.8px, #F6F5EF, left);
-                    }
-                }
+    .listbox {
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 10.667vw;
+        margin-left: 5.333vw;
 
-                &:nth-of-type(2) {
-                    width: 42.667vw;
-                    height: 220px;
-                    margin-right: 4.167vw;
-                }
+        &__item {
 
-                &:nth-of-type(3) {
-                    width: 43.2vw;
-                    height: 180px;
-                    margin-right: 4.167vw;
-                }
+            &--yacht {
+                @include text-style(400, 24px, 'DM Sans', 28.8px, #F6F5EF, left);
+                margin: 0;
+                padding: 0;
+                width: 89.333vw;
+                height: 145px;
+            }
+
+            &--description {
+                @include text-style(400, 14px, 'DM Sans', 19.6px, #F6F5EF99, left);
+                width: 42.667vw;
+                height: 220px;
+                margin-right: 4.167vw;
+                margin-top: 10.667vw;
+            }
+
+            &--crew {
+                @include text-style(400, 14px, 'DM Sans', 19.6px, #F6F5EF99, left);
+                width: 43.2vw;
+                height: 180px;
+                margin-right: 4.167vw;
+                margin-top: 10.667vw;
             }
         }
     }
