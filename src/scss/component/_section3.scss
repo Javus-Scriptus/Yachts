@@ -3,40 +3,12 @@
 // @use '/scss/utils/_variables.scss';
 // @use '/scss/utils/_base.scss';
 
-%regular-text {
-  // color: var($creamy-white);
-  font-family: 'DM Sans' sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 140%;
-  letter-spacing: 0.3px;
-  color: #f6f5ef;
-  letter-spacing: 0.42px;
-}
-
-%centering {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-%bg-styles {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  background-clip: content-box;
-  object-fit: cover;
-}
-
 // TODO mobile
 @media screen and (min-width: 320px) {
   .swiper {
     width: 100%;
     max-width: 80vw;
     height: 85vh;
-    // outline: 2px solid blue;
   }
 
   .swiper-slide {
@@ -48,7 +20,6 @@
     // @extend %bg-styles;
     margin-top: 3vh;
     padding-top: 2.5vh;
-    outline: 2px solid red;
     border-radius: 5px;
     transition: all 0.7s ease-in-out;
     background: #1f212d;
@@ -57,17 +28,33 @@
     cursor: default;
   }
 
+  span.swiper-pagination-bullet-active {
+    width: 7px;
+    height: 7px;
+    background-color: #f6f5ef !important;
+    opacity: 0.6;
+  }
+
+  span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #f6f5ef !important;
+  }
+
   .swiper-button-prev::after {
-    content: 'https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/section3/arrow-right.svg' !important;
-    height: 7px !important;
-    width: 7px !important;
+    position: relative;
+    height: 1px !important;
+    width: 1px !important;
     color: #f6f5ef;
+    top: 1.5vh;
+    right: 3.9vw;
   }
 
   .swiper-button-next::after {
-    content: '';
-    height: 7px !important;
-    width: 7px !important;
+    position: relative;
+    height: 1px !important;
+    width: 1px !important;
+    color: #f6f5ef;
+    top: 1.5vh;
+    right: 0.3vw;
   }
 
   // section styles
@@ -127,7 +114,7 @@
       letter-spacing: 0.3px;
       color: #f6f5ef;
       letter-spacing: 0; // placeholder.42px;
-      gap: 3.36vw;
+      gap: 10vw;
       // @extend %regular-text;
       font-size: 14px;
       line-height: 185%;
@@ -150,13 +137,41 @@
   }
 }
 
+//TODO mobile 2.0
+@media screen and (min-width: 610px) {
+  .swiper {
+    max-width: 66vw;
+  }
+
+  .swiper-button-prev::after {
+    right: 3.1vw;
+  }
+}
+
 //TODO tablet
 @media screen and (min-width: 768px) {
+  .swiper-button-prev::after {
+    position: relative;
+    height: 1px !important;
+    width: 1px !important;
+    color: #f6f5ef;
+    right: 2.4vw;
+    top: 2.5vh;
+  }
+
+  .swiper-button-next::after {
+    position: relative;
+    height: 1px !important;
+    width: 1px !important;
+    color: #f6f5ef;
+    right: 0.3vw;
+    top: 2.5vh;
+  }
+
   .swiper {
     width: 100%;
     max-width: 95vw;
     height: 85vh;
-    // outline: 2px solid blue;
   }
 
   .swiper-slide {
@@ -186,6 +201,7 @@
       font-size: 12.5px;
       line-height: 180%;
       margin-left: 5vw;
+      gap: 3.36vw;
     }
 
     &__stats {
@@ -199,12 +215,26 @@
 
 // TODO desktop
 @media screen and (min-width: 1024px) {
+  .swiper-button-prev::after {
+    position: relative;
+    height: 1px !important;
+    width: 1px !important;
+    color: #f6f5ef;
+    right: 1vw;
+  }
+
+  .swiper-button-next::after {
+    position: relative;
+    height: 1px !important;
+    width: 1px !important;
+    color: #f6f5ef;
+    right: 0.3vw;
+  }
+
   .swiper {
     width: 100%;
     max-width: 1650px;
     height: 82vh;
-    outline: 2px solid green;
-    // outline: 2px solid blue;
   }
 
   .swiper-slide {
@@ -240,6 +270,7 @@
       margin-left: 2.5vw;
       font-size: 14px;
       line-height: 185%;
+      gap: 1.5vw;
     }
 
     &__type {
