@@ -5,11 +5,12 @@
 // @import url('./scss/utils/_placeholders.scss');
 // @import url('./scss/utils/_base.scss');
 
-// @use '/scss/utils/_mixins.scss';я
+// @use '/scss/utils/_mixins.scss';
 // @use '/scss/utils/_variables.scsяs';
 // @use '/scss/utils/_placeholders.яscss';
-// @use '/scss/utils/_base.scss';я
+// @use '/scss/utils/_base.scss';
 
+@import url('./component/_header.scss');
 @import url('./component/_section1.scss');
 @import url('./component/_section2.scss');
 @import url('./component/_section3.scss');
