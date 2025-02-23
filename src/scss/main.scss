@@ -17,3 +17,45 @@
 @import url('./component/_section5.scss');
 @import url('./component/_section6.scss');
 @import url('./component/_footer.scss');
+
+body,
+html {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: #11131f !important;
+  //   overflow-x: hidden !important;
+  font-family: 'DM Sans', sans-serif !important;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+html {
+    outline: 2px solid green;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none !important;
+  user-select: none;
+}
+
+.container {
+  width: 90vw !important;
+  width: 1800px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  outline: 2px solid red;
+  // overflow: hidden !important;
+}
+
+button {
+  cursor: pointer;
+}
