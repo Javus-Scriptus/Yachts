@@ -16,7 +16,8 @@
   &::after {
     content: '';
     position: absolute;
-    margin-left: 2.3vw;
+    // margin-left: 2.3vw;
+    margin-left: 30px;
     top: 10vh;
     width: 95%;
     height: 1px;
@@ -26,9 +27,9 @@
 
   &__logo--cont {
     display: flex;
-    align-items: center;
+    // align-items: center;
     white-space: nowrap;
-    margin-left: 3vw;
+    margin-left: 40px;
     text-transform: uppercase;
     font-size: 17px;
     font-weight: 700;
@@ -36,12 +37,13 @@
   }
 
   &__icon {
-    width: 4vw;
-    height: 4vh;
+    width: 30px;
+    height: 30px;
   }
 
   &__breadcrumbs {
-    margin-left: 40vw;
+    margin-left: 30vw;
+    margin-bottom: 2vh;
     display: flex;
     gap: 4vh;
     color: #f6f5ef;
@@ -51,6 +53,19 @@
     line-height: 118%; /* 16.52px */
     letter-spacing: 0.42px;
     text-transform: uppercase;
+  }
+
+  &__link {
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      color: #88b3b9;
+      transform: perspective(300);
+    }
+  }
+
+  &__logo {
+    margin-top: 0.62vh;
   }
 }
 
@@ -139,4 +154,7 @@
       }
     }
   }
+}
+
+@media screen and (min-width: 1024px) {
 }
