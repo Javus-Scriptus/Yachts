@@ -29,29 +29,33 @@
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
   <!-- AOS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script type="module" crossorigin src="/yachts/assets/index-5ace33c1.js"></script>
-  <link rel="stylesheet" href="/yachts/assets/index-a3835885.css">
+  <script type="module" crossorigin src="/yachts/assets/index-b9450d81.js"></script>
+  <link rel="stylesheet" href="/yachts/assets/index-761c997d.css">
 </head>
 
 <body>
   <!-- html files -->
   <header class="header">
-    <!-- <article class="header__container"> -->
-    <ul class="header__logotype">
-        <li><svg class="header__icon">
-                <use href="https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/symbol-defs.svg#logo">
-                </use>
-            </svg></li>
+    <ul class="header__logo--cont">
+        <li class=""><img class="header__icon" src="https://raw.githubusercontent.com/Javus-Scriptus/Yachts/main/src/img/header/yacht.svg" alt="yacht-icon">
+        </li>
+    </ul>
+    <ul class="header__logo--cont">
         <li class="header__logo">yacht adventures</li>
     </ul>
-    <ul class="header__nav">
-        <li><a class="header__link" href="">about</a></li>
-        <li><a class="header__link" href="">yachts</a></li>
-        <li><a class="header__link" href="">reviews</a></li>
-    </ul>
-    <!-- </article> -->
+    <h2 class="logo">Navbar</h2>
+    <nav id="nav-bar" class="header__nav">
+        <ul class="header__breadcrumbs">
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Clients</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+    <div class="burger">
+        <div class="burger__stripe"></div>
+    </div>
 </header>
-<hr>
   <section class="section1">
     <article class="section1__container">
         <aside class="card">
@@ -818,7 +822,7 @@
 </footer>
 
   <!-- main js file -->
-  
+  <script src="./js/main.js"></script>
   
   <!-- AOS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
