@@ -216,22 +216,63 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (max-width: 1280px) {
+    .section1 {
+        &__container {
+            margin: 0;
+            padding: 0;
+            gap: 14.648vw;
+            margin: 0 3.125vw;
+            margin-bottom: 7.813vw;
+        }
+    }
+
+    .card {
+        width: 39.602vw;
+    }
+
+    .textbox {
+        margin-top: 10.891vw
+    }
+
+    .listbox {
+        justify-content: end;
+        padding: 0;
+
+        &__item {
+
+            &--yacht {
+                position: relative;
+                width: 66.927vw;
+            }
+
+            &--description {
+                width: 23.828vw;
+                margin-right: 4.167vw;
+            }
+
+            &--crew {
+                width: 24.089vw;
+                margin-right: 4.167vw;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
     .section1 {
         &__container {
             flex-flow: column-reverse;
             margin: 0;
             padding: 0;
-            padding-bottom: 13.021vw;
-            padding-top: 8.333vw;
         }
     }
 
     .card {
         width: 60%;
-        height: 90vw;
         background-size: contain;
         margin-left: 4.167vw;
+        margin-bottom: 9.766vw;
 
         &__picturelist {
             padding: 0;
@@ -258,21 +299,20 @@
             &--person {
                 width: 233px;
                 height: 233px;
-                left: 45vw;
                 top: -79px;
             }
 
             &--yacht {
                 width: 49.219vw;
                 height: 28.776vw;
-                top: -15vw;
-                left: 0;
+                // top: -15vw;
+                left: -6vw;
                 margin: 0 auto;
             }
         }
 
         &__text {
-            margin-top: 7.552vw;
+            margin-top: -5.552vw;
 
             &--price {
                 @include text-style(400, 60px, 'DM Sans', 66px, #11131F, left);
@@ -290,7 +330,7 @@
         width: 90%;
         height: 100%;
         margin: 0 auto;
-        margin-bottom: 8.333vw;
+        margin-bottom: -8.333vw;
 
         &__title {
             @include text-style(500, 36px, 'DM Sans', 39.6px, #ffffff, left);
@@ -315,86 +355,58 @@
     }
 
     .listbox {
-        justify-content: end;
-        
         &__item {
-            padding-bottom: 4.167vw;
-
             &--yacht {
-                position: relative;
-                width: 66.927vw;
                 left: 10vw;
             }
-            
+
             &--description {
-                width: 23.828vw;
-                margin-right: 4.167vw;
+
+                margin-top: 4.167vw;
             }
-            
+
             &--crew {
                 width: 24.089vw;
+                margin-top: 4.167vw;
             }
         }
     }
 }
 
 @media (max-width: 767px) {
-    .section1 {
-        &__container {
-            flex-flow: column-reverse;
-            align-items: center;
-            margin: 0;
-            padding: 0;
-            padding-bottom: 21.333vw;
-            padding-top: 10.667vw;
-        }
-    }
-
     .card {
-        width: 90%;
-        height: 120vw;
-        background-size: contain;
-
-        &__picturelist {
-            padding: 0;
-            margin: 0;
-            margin-top: 6.4vw;
-            margin-left: 6.4vw;
-        }
+        width: 70%;
+        height: 100vw;
+        margin-right: auto;
 
         p {
-            @include text-style(700, 14px, 'DM Sans', 15.4px, #11131F, left);
+            margin-left: 4.167vw;
         }
 
         &__clients-title {
-            margin: 0;
             margin-top: 2.933vw;
             margin-left: 6.4vw;
 
         }
 
         &__picturebox {
-            padding: 0;
-            width: auto;
 
             &--person {
                 width: 35.467vw;
                 height: 35.467vw;
                 left: 55vw;
-                top: -79px;
             }
 
             &--yacht {
                 width: 76.533vw;
                 height: 44.533vw;
-                top: -25.333vw;
-                left: 0;
-                margin: 0 auto;
+                top: -17.333vw;
+                left: -3vw;
             }
         }
 
         &__text {
-            margin-top: 15.467vw;
+            margin-top: 1;
 
             &--price {
                 @include text-style(400, 48px, 'DM Sans', 52.8px, #11131F, left);
@@ -403,40 +415,31 @@
             &--description {
                 @include text-style(400, 14px, 'DM Sans', 19.6px, #11131F, left);
                 width: 46.067vw;
-                position: relative;
-                top: -2.4vw;
+                top: -1.4vw;
             }
         }
     }
 
     .textbox {
-        width: 90%;
-        height: 100%;
-        margin: 0 auto;
-        margin-bottom: 10.667vw;
+        margin-bottom: -6.021vw;
 
         &__title {
-            @include text-style(500, 36px, 'DM Sans', 39.6px, #ffffff, left);
             margin-bottom: 3.733vw;
         }
 
         &__description {
-            @include text-style(400, 14px, 'DM Sans', 19.6px, #F6F5EF, left);
             margin-bottom: 6.4vw;
         }
 
         &__buttons {
             gap: 2.133vw;
-            padding: 0;
 
             &--start {
-                @include text-style(700, 14px, 'DM Sans', 15.4px, #F6F5EF, center);
                 width: 130px;
                 height: 43px;
             }
 
             &--explore {
-                @include text-style(700, 14px, 'DM Sans', 15.4px, #F6F5EF, center);
                 width: 104px;
                 height: 43px;
             }
@@ -444,36 +447,121 @@
     }
 
     .listbox {
-        justify-content: center;
-        margin: 0;
-        padding: 0;
-        padding-bottom: 10.667vw;
+        justify-content: start;
         margin-left: 5.333vw;
+        padding-bottom: 8.333vw;
 
         &__item {
-
             &--yacht {
                 @include text-style(400, 24px, 'DM Sans', 28.8px, #F6F5EF, left);
-                margin: 0;
-                padding: 0;
                 width: 89.333vw;
-                height: 145px;
+                height: 100%;
+                margin-left: -5.333vw;
             }
 
             &--description {
                 @include text-style(400, 14px, 'DM Sans', 19.6px, #F6F5EF99, left);
                 width: 42.667vw;
-                height: 220px;
+                height: 100%;
                 margin-right: 4.167vw;
-                margin-top: 10.667vw;
             }
 
             &--crew {
                 @include text-style(400, 14px, 'DM Sans', 19.6px, #F6F5EF99, left);
                 width: 43.2vw;
-                height: 180px;
+                height: 100%;
                 margin-right: 4.167vw;
-                margin-top: 10.667vw;
+            }
+        }
+    }
+}
+
+@media (max-width: 540px) {
+    .card {
+        width: 80%;
+
+        &__picturelist {
+            margin-top: 4.4vw;
+            margin-left: 4.4vw;
+        }
+
+        &__clients-title {
+            margin-left: 4.4vw;
+        }
+
+        &__picturebox {
+
+            &--person {
+                left: 51.583vw;
+            }
+
+            &--yacht {
+                top: -25vw;
+                left: -1vw;
+            }
+        }
+
+        &__text {
+            &--description {
+                width: 31.333vw;
+                top: 0;
+            }
+        }
+    }
+
+    .listbox {
+        &__item {
+            &--yacht {
+                padding-bottom: 5.167vw;
+            }
+
+            &--description,
+            &--crew {
+                margin: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .card {
+        &__picturebox {
+
+            &--yacht {
+                top: -31.333vw;
+                left: -3vw;
+            }
+        }
+
+        &__text {
+            margin-top: 0.5vw;
+            left: -8vw;
+            width: 100%;
+            gap: 0;
+
+            &--description {
+                top: -3.4vw;
+            }
+        }
+    }
+
+    .textbox {
+        height: 100%;
+    }
+
+    .listbox {
+        padding-bottom: 15.667vw;
+        margin-left: 5.333vw;
+
+        &__item {
+            &--yacht {
+                height: 100%;
+                margin-left: -5.333vw;
+                padding-bottom: 8.167vw;
+            }
+
+            &--description {
+                margin-right: 4.167vw;
             }
         }
     }
