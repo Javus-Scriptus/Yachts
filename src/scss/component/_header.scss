@@ -1,79 +1,142 @@
-// @use '/scss/utils/_placeholders.scss';
-// @use '/scss/utils/_placeholders.scss';
-// @use '/scss/utils/_base.scss';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-// TODO mobile
-@media screen and (min-width: 320px) {
-  .header {
-    position: relative;
+:root {
+  --primary: rgba(0, 136, 169, 1);
+  --secondary: #24252a;
+  --textcolor: #edf0f1;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3vh 0;
+
+  &::after {
+    content: '';
+    position: absolute;
+    margin-left: 2.3vw;
+    top: 10vh;
+    width: 95%;
+    height: 1px;
+    background: #edf0f1;
+    opacity: 40%;
+  }
+
+  &__logo--cont {
     display: flex;
-    padding-top: 4vh;
-    padding-bottom: 4vh;
-    // outline: 2px solid red;
-    justify-content: space-between;
-    width: 90vw;
-    margin-left: auto;
-    margin-right: auto;
+    align-items: center;
+    white-space: nowrap;
+    margin-left: 3vw;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 700;
+    font-family: 'DM Sans';
+  }
 
-    &::after {
-      content: '';
-      position: absolute;
-      bottom: 1vh;
-      height: 0.5px;
+  &__icon {
+    width: 4vw;
+    height: 4vh;
+  }
+
+  &__breadcrumbs {
+    margin-left: 40vw;
+    display: flex;
+    gap: 4vh;
+    color: #f6f5ef;
+    font-family: 'DM Sans';
+    font-size: 14.5px;
+    font-weight: 700;
+    line-height: 118%; /* 16.52px */
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .header {
+    &__nav {
+      height: 0;
       width: 100%;
-      color: rgba(246, 245, 239, 1);
-      background: rgba(246, 245, 239, 1);
-      // outline: 5px solid green;
+      position: fixed;
+      z-index: 2;
+      top: 0;
+      left: 0;
+      overflow-y: hidden;
+      transition: 0.5s;
+      background: #24252a;
     }
 
-    &__logotype {
+    &__breadcrumbs {
       display: flex;
-      align-items: center;
+      flex-direction: column;
+      gap: 4vh;
+      position: relative;
+      top: 25%;
+      width: 100%;
+      text-align: center;
+      margin-top: 30px;
+      margin-left: 0;
+      font-size: 16px;
+    }
+
+    .burger {
+      position: relative;
+      display: flex;
       justify-content: center;
-      gap: 3.5vw;
-      width: 50%;
-    }
-
-    &__nav {
-      display: none;
-      gap: 1.5vw;
       align-items: center;
-      justify-content: center;
-    }
+      width: 6vw;
+      height: 5vh;
+      bottom: 1.5vh;
+      margin-right: 3vw;
+      cursor: pointer;
+      transition: all 0.5s ease-in-out;
+      z-index: 2;
+      overflow: hidden;
 
-    &__logo {
-      font-size: 18px;
-      text-transform: uppercase;
-      font-weight: 600;
-    }
+      &__stripe {
+        width: 40px;
+        height: 4px;
+        background: var(--textcolor);
+        border-radius: 5px;
+        /*box-shadow: 0 1px 5px rgba(255, 101, 47, 0.5);*/
+        transition: all 0.5s ease-in-out;
 
-    &__link {
-      // @extend %regular-text;
-      color: #f6f5ef;
-      font-size: 14px;
-      font-weight: 700;
-      line-height: 118%; /* 16.52px */
-      letter-spacing: 0.42px;
-      text-transform: uppercase;
+        &::before,
+        &::after {
+          content: '';
+          position: absolute;
+          width: 40px;
+          height: 4px;
+          background: var(--textcolor);
+          border-radius: 5px;
+          /*box-shadow: 0 1px 5px rgba(255, 101, 47, 0.5);*/
+          transition: all 0.5s ease-in-out;
+        }
+
+        &::before {
+          transform: translateY(-12px);
+        }
+
+        &::after {
+          transform: translateY(12px);
+        }
+      }
+
+      &.open .burger__stripe {
+        transform: translateX(-50px);
+        background: transparent;
+        box-shadow: none;
+      }
+
+      &.open .burger__stripe::before {
+        transform: rotate(45deg) translate(35px, -35px);
+      }
+
+      &.open .burger__stripe::after {
+        transform: rotate(-45deg) translate(35px, 35px);
+      }
     }
   }
-}
-
-// TODO tablet
-@media screen and (min-width: 768px) {
-  .header {
-    display: flex;
-
-    &__logotype {
-      width: 35%;
-    }
-
-    &__nav {
-      display: flex;
-    }
-  }
-}
-
-// TODO desktop
-@media screen and (min-width: 1024px) {
 }

@@ -33,7 +33,7 @@ html {
 }
 
 html {
-    outline: 2px solid green;
+  outline: 2px solid green;
 }
 
 * {
@@ -55,6 +55,12 @@ html {
   align-items: center;
   outline: 2px solid red;
   // overflow: hidden !important;
+}
+
+::before,
+::after {
+  content: '';
+  position: absolute;
 }
 
 button {
