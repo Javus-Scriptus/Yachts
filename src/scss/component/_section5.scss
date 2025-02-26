@@ -5,11 +5,11 @@
 }
 .section__rend__yacht {
   background: #11131f;
-    background-repeat: no-repeat;
-    background-size: 350px;
-    background-image: url(../img/section5/ellipse.png);
-    background-position: bottom -0px right 0;
-    padding-bottom: 164px;
+  background-repeat: no-repeat;
+  background-size: 350px;
+  background-image: url(../img/section5/ellipse.png);
+  background-position: bottom -0px right 0;
+  padding-bottom: 164px;
   @media screen and (min-width: 768px) {
     background-position: bottom -0px right 0;
     background-size: 250px;
@@ -86,8 +86,10 @@
   }
 }
 .form__rend__yacht {
+  margin-top: 40px;
   width: 100%;
   @media screen and (min-width: 768px) {
+    margin-top: 0;
     width: 364px;
   }
   @media screen and (min-width: 1199px) {
@@ -208,11 +210,11 @@ input[type='number']::-webkit-inner-spin-button {
 }
 .thanks__modal__send__yacht {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 5%;
+  left: 28%;
   background: #1f212d;
   color: white;
-  transform: translate(-75%, -50%);
+  transform: translate(-28%, -5%);
   border-radius: 20px;
   text-align: center;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
@@ -221,15 +223,19 @@ input[type='number']::-webkit-inner-spin-button {
   background-size: 400px;
   background-repeat: no-repeat;
   @media screen and (min-width: 768px) {
+    top: 5%;
+    left: 13.5%;
     transform: translate(-50%, -50%);
     border-radius: 40px;
     background-position: bottom 30px right -30px;
     background-size: 600px;
   }
   @media screen and (min-width: 1199px) {
+    top: 5%;
+    left: 28%;
     background-position: bottom -0px right -30px;
-  background-size: 600px;
-
+    transform: translate(-50%, -50%);
+    background-size: 600px;
   }
 }
 .box__modal {
@@ -247,11 +253,11 @@ input[type='number']::-webkit-inner-spin-button {
   width: 20px;
   height: 20px;
   margin-top: 14px;
-  margin-right: 14px;
+  margin-left: 277px;
   cursor: pointer;
   @media screen and (min-width: 768px) {
     margin-top: 32px;
-    margin-right: 32px;
+    margin-left: 514px;
     width: 24px;
     height: 24px;
   }
@@ -259,9 +265,11 @@ input[type='number']::-webkit-inner-spin-button {
   }
 }
 .thanks__yacht__img {
+  margin: 0 auto;
   width: 287px;
   height: 149px;
   @media screen and (min-width: 768px) {
+    margin-top: 37px;
     width: 338px;
     height: 198px;
   }
@@ -298,7 +306,7 @@ input[type='number']::-webkit-inner-spin-button {
   font-size: 14px;
   line-height: 19.6px;
   letter-spacing: -2%;
-  margin-top: 14px;  
+  margin-top: 14px;
   width: 37.37vw;
   margin-bottom: 40px;
   @media screen and (min-width: 768px) {
@@ -308,6 +316,29 @@ input[type='number']::-webkit-inner-spin-button {
     margin-bottom: 64px;
   }
   @media screen and (min-width: 1199px) {
-
+  }
+}
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
