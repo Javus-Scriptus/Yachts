@@ -1,0 +1,247 @@
+/* Footer Styles */
+.footer {
+    background-color: #0B0F19;
+    color: white;
+    padding: 2rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.1),
+        transparent
+    );
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.footer-left .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.logo i {
+    font-size: 1.5rem;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+    color: #E91E63;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.social-text {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    color: #94A3B8;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background: #E91E63;
+    transform: translateY(-2px);
+}
+
+.footer-bottom {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    color: #94A3B8;
+}
+
+.privacy-link {
+    color: #94A3B8;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.privacy-link:hover {
+    color: white;
+}
+
+@media (min-width: 1200px) {
+    .image-container {
+        padding-bottom: 50%;
+    }
+}
+
+
+@media (max-width: 1199px) {
+    .container {
+        padding: 4rem 2rem;
+    }
+    
+    .travel-section {
+        gap: 3rem;
+    }
+    
+    h2 {
+        font-size: 2.4rem;
+    }
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+    .container {
+        padding: 3rem 1.5rem;
+    }
+    
+    .travel-section {
+        gap: 2.5rem;
+        margin-bottom: 6rem;
+    }
+    
+    .image-container {
+        padding-bottom: 65%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .container {
+        padding: 2rem 1rem;
+    }
+    
+    .travel-section {
+        flex-direction: column;
+        gap: 2rem;
+        margin-bottom: 4rem;
+    }
+    
+    .travel-section.reverse {
+        flex-direction: column;
+    }
+    
+    .image-container {
+        padding-bottom: 75%;
+    }
+    
+    .content {
+        padding: 1rem;
+        text-align: center;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    p {
+        margin: 0 auto 2rem auto;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    .footer-nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .footer-right {
+        text-align: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .footer-bottom-content {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+}
+
+/* Mobile  */
+@media (max-width: 480px) {
+    .container {
+        padding: 1.5rem 1rem;
+    }
+    
+    .image-container {
+        padding-bottom: 100%;
+    }
+    
+    .feature-image {
+        border-radius: 16px;
+    }
+    
+    .image-container::after {
+        border-radius: 16px;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+    }
+    
+    .learn-more {
+        width: 100%;
+        padding: 0.8rem 1.5rem;
+    }
+} 
