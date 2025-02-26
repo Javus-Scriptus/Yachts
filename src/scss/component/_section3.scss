@@ -239,10 +239,6 @@
 
   .swiper-slide {
     margin-top: 0.3vh;
-
-    // &:hover {
-    //   transform: scale(0.9);
-    // }
   }
 
   .yacht {
@@ -283,5 +279,15 @@
       line-height: 150%;
       bottom: 0.5vh;
     }
+  }
+}
+
+// TODO  height adaptive
+@media screen and (min-height: 0px) and (max-height: 600px) {
+  .swiper {
+    height: 110vh;
+  }
+  .swiper-slide {
+    height: 100vh !important;
   }
 }
