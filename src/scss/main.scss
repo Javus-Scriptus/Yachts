@@ -10,14 +10,14 @@
 // @use '/scss/utils/_placeholders.яscss';
 // @use '/scss/utils/_base.scss';
 
-@import url('./component/_header.scss');
-@import url('./component/_section1.scss');
-@import url('./component/_section2.scss');
-@import url('./component/_section3.scss');
-@import url('./component/_section4.scss');
-@import url('./component/_section5.scss');
-@import url('./component/_section6.scss');
-@import url('./component/_footer.scss');
+@import url(./component/_header.scss);
+@import url(./component/_section1.scss);
+@import url(./component/_section2.scss);
+@import url(./component/_section3.scss);
+@import url(./component/_section4.scss);
+@import url(./component/_section5.scss);
+@import url(./component/_section6.scss);
+@import url(./component/_footer.scss);
 
 body,
 html {
