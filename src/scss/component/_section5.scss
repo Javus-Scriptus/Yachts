@@ -5,49 +5,103 @@
 }
 .section__rend__yacht {
   background: #11131f;
-  background-repeat: no-repeat;
-  background-size: 300px;
-  background-position: bottom -0px right 0;
-  background-image: url(../img/section5/ellipse.png);
-  padding-bottom: 164px;
+    background-repeat: no-repeat;
+    background-size: 350px;
+    background-image: url(../img/section5/ellipse.png);
+    background-position: bottom -0px right 0;
+    padding-bottom: 164px;
+  @media screen and (min-width: 768px) {
+    background-position: bottom -0px right 0;
+    background-size: 250px;
+  }
+  @media screen and (min-width: 1199px) {
+    background-size: 250px;
+    background-position: bottom -0px right 0;
+  }
 }
 .container__rend__yacht {
-  width: 923px;
+  width: 90%;
   padding: auto 10px;
   margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    width: 714px;
+  }
+  @media screen and (min-width: 1199px) {
+    width: 923px;
+  }
 }
 .flexbox__rend__yacht {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: block;
+  justify-content: left;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 1199px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 .h2__and__img__rend__yacht {
-  width: 282px;
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1199px) {
+    width: 282px;
+  }
 }
 .h2__rend__yacht {
-  width: 282px;
   font-family: DM Sans;
   font-weight: 500;
-  font-size: 60px;
-  line-height: 66px;
+  font-size: 36px;
+  line-height: 39.6px;
   color: white;
+
+  @media screen and (min-width: 768px) {
+    font-size: 60px;
+    line-height: 66px;
+  }
+  @media screen and (min-width: 1199px) {
+    width: 282px;
+  }
 }
 .img__rend__yacht {
-  width: 282px;
-  height: 191px;
-  margin-top: 64px;
-  display: flex;
+  width: 259px;
+  height: 187px;
+  margin: 0;
+  padding: 0;
+  margin-top: 16px;
+  margin-left: 0;
+  @media screen and (min-width: 768px) {
+    width: 271px;
+    height: 187px;
+    margin-top: 32px;
+  }
+  @media screen and (min-width: 1199px) {
+    width: 282px;
+    height: 191px;
+    margin-top: 64px;
+    display: flex;
+  }
 }
 .form__rend__yacht {
-  width: 443px;
-  display: block;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: 364px;
+  }
+  @media screen and (min-width: 1199px) {
+    width: 443px;
+    display: block;
+  }
 }
 .input__rend__yacht {
   display: block;
   font-family: DM Sans;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 19.2px;
+  font-size: 14px;
+  line-height: 16.8px;
+  letter-spacing: -4.5%;
   color: #f6f5ef;
   background-color: transparent;
   border: transparent;
@@ -55,42 +109,81 @@
   outline: none;
   width: 100%;
   padding-right: 10px;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 19.2px;
+  }
+  @media screen and (min-width: 1199px) {
+  }
 }
 .input__rend__yacht::placeholder {
   color: #f6f5ef;
   font-family: DM Sans, serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 19.2px;
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1199px) {
+    font-size: 16px;
+  }
 }
 .input__rend__yacht:not(:last-child) {
-  margin-bottom: 28px;
+  margin-bottom: 24px;
   padding-bottom: 16px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 28px;
+  }
+  @media screen and (min-width: 1199px) {
+  }
 }
 .input__rend__yacht:nth-child(4) {
-  margin-bottom: 64px;
   height: 74px;
+  margin-bottom: 24px;
   resize: none;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
+  @media screen and (min-width: 1199px) {
+    margin-bottom: 64px;
+  }
 }
 .button__rend__yacht {
-  width: 132px;
-  height: 48px;
+  width: 123px;
+  height: 43px;
   font-family: DM Sans;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 19.8px;
+  font-size: 14px;
+  line-height: 15.4px;
+  letter-spacing: -4.5%;
   color: #f6f5ef;
   border-radius: 60px;
   border: solid #f6f5ef 1.5px;
-  background-color: transparent;
   padding: 14px 62px 14px 28px;
+  background-color: transparent;
   display: flex;
+  @media screen and (min-width: 768px) {
+    width: 132px;
+    height: 48px;
+    font-size: 18px;
+    line-height: 19.8px;
+  }
+  @media screen and (min-width: 1199px) {
+    width: 132px;
+    height: 48px;
+    display: flex;
+    padding: 14px 62px 14px 28px;
+  }
 }
 .button__img__rend__yacht {
   width: 20px;
   height: 12px;
   margin-left: 16px;
-  margin-top: 4px;
+  @media screen and (min-width: 768px) {
+    margin-top: 4px;
+  }
+  @media screen and (min-width: 1199px) {
+  }
 }
 input[type='number']::-webkit-outer-spin-button,
 input[type='number']::-webkit-inner-spin-button {
@@ -117,54 +210,104 @@ input[type='number']::-webkit-inner-spin-button {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   background: #1f212d;
   color: white;
-  border-radius: 40px;
+  transform: translate(-75%, -50%);
+  border-radius: 20px;
   text-align: center;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  background-image: url(../../img/section5/background-blur.png);
+  background-position: bottom 80px right -40px;
+  background-size: 400px;
+  background-repeat: no-repeat;
+  @media screen and (min-width: 768px) {
+    transform: translate(-50%, -50%);
+    border-radius: 40px;
+    background-position: bottom 30px right -30px;
+    background-size: 600px;
+  }
+  @media screen and (min-width: 1199px) {
+    background-position: bottom -0px right -30px;
+  background-size: 600px;
+
+  }
 }
 .box__modal {
-  width: 570px;
-  height: 522px;
+  width: 335px;
+  height: 436px;
+  @media screen and (min-width: 768px) {
+    width: 570px;
+    height: 522px;
+  }
+  @media screen and (min-width: 1199px) {
+  }
 }
-.thanks__button__yacht__send {
-  position: absolute;
-  background: none;
-  border: none;
-  font-size: 20px;
-  color: white;
+.thanks__close__icon {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  margin-top: 14px;
+  margin-right: 14px;
   cursor: pointer;
+  @media screen and (min-width: 768px) {
+    margin-top: 32px;
+    margin-right: 32px;
+    width: 24px;
+    height: 24px;
+  }
+  @media screen and (min-width: 1199px) {
+  }
 }
-
 .thanks__yacht__img {
-  width: 338px;
-  height: 198px;
+  width: 287px;
+  height: 149px;
+  @media screen and (min-width: 768px) {
+    width: 338px;
+    height: 198px;
+  }
+  @media screen and (min-width: 1199px) {
+  }
 }
 .thanks__text {
   text-align: left;
-  margin-left: 64px;
-  margin-right: 64px;
+  margin-left: 24px;
+  margin-right: 24px;
+  @media screen and (min-width: 768px) {
+    margin-left: 64px;
+    margin-right: 64px;
+  }
+  @media screen and (min-width: 1199px) {
+  }
 }
 .thanks__h2__yacht__rend {
   font-family: DM Sans;
   font-weight: 500;
-  font-size: 32px;
-  line-height: 38.4px;
+  font-size: 24px;
+  line-height: 28.8px;
+  @media screen and (min-width: 768px) {
+    font-size: 32px;
+    line-height: 38.4px;
+  }
+  @media screen and (min-width: 1199px) {
+  }
 }
 
 .thanks__p__yacht__rend {
   font-family: DM Sans;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 22.4px;
-  margin-top: 16px;
-}
-.thanks__close__icon {
-  display: flex;
-  margin-top: 32px;
-  margin-right: 32px;
-  width: 24px;
-  height: 24px;
-  cursor: pointer;
+  font-size: 14px;
+  line-height: 19.6px;
+  letter-spacing: -2%;
+  margin-top: 14px;  
+  width: 37.37vw;
+  margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 22.4px;
+    margin-top: 16px;
+    margin-bottom: 64px;
+  }
+  @media screen and (min-width: 1199px) {
+
+  }
 }
