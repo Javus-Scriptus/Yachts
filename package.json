@@ -1,4 +1,5 @@
 {
+  "base": "/yachts/",
   "name": "yachts",
   "private": false,
   "version": "0.0.0",
