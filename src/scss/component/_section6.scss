@@ -52,6 +52,7 @@ $font-family_1: "DM Sans";
 	width: 497px;
 	margin-right: 446px;
 	padding-left: 11px;
+	padding-left: 10px;
 }
 .review__text {
 	width: 273px;
@@ -90,7 +91,11 @@ $font-family_1: "DM Sans";
 	margin: 0 auto;
 	margin-bottom: 24px;
 	padding: 0;
-
+	align-items: center;
+	margin: 0 auto;
+	margin: 0 auto;
+	margin-bottom: 24px;
+	padding: 0;
 }
 .review__item-heading {
 	color: $color_1;
@@ -116,7 +121,6 @@ $font-family_1: "DM Sans";
 	margin: auto;
 }
 
-
 .img__wrapper{
     margin: 0 auto;
     display: flex;
@@ -124,13 +128,13 @@ $font-family_1: "DM Sans";
     margin-bottom: 15px;
 }
 
-
 .accordion__button {
 	width: 68px;
 	height: 68px;
 	flex-shrink: 0;
 	position: relative;
     right: -60vw;
+	right: -548px;
 	top: 64px;
 }
 .slick-dots {
@@ -249,5 +253,6 @@ $font-family_1: "DM Sans";
 		margin-left: 26px;
 		margin-right: 0px;
 	}
+}
 }
 }
