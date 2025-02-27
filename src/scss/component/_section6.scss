@@ -92,11 +92,15 @@ $font-family_1: "DM Sans";
 	margin-bottom: 24px;
 	padding: 0;
 	align-items: center;
-	margin: 0 auto;
+	padding: 0;
+	display: flex;
 	margin: 0 auto;
 	margin-bottom: 24px;
-	padding: 0;
+	width: 56px;
+	height: 56px;
 }
+
+
 .review__item-heading {
 	color: $color_1;
 	text-align: center;
