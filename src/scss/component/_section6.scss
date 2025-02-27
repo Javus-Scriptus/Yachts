@@ -86,6 +86,11 @@ $font-family_1: "DM Sans";
     width: 56px;
     height: 56px;
     margin: 0 auto;
+
+	margin: 0 auto;
+	margin-bottom: 24px;
+	padding: 0;
+
 }
 .review__item-heading {
 	color: $color_1;
@@ -111,12 +116,14 @@ $font-family_1: "DM Sans";
 	margin: auto;
 }
 
+
 .img__wrapper{
     margin: 0 auto;
     display: flex;
     justify-content: center;
     margin-bottom: 15px;
 }
+
 
 .accordion__button {
 	width: 68px;
@@ -244,4 +251,3 @@ $font-family_1: "DM Sans";
 	}
 }
 }
-
