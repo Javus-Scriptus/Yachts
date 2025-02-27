@@ -24,19 +24,23 @@
 }
 .section-img1{
 position: relative;
-justify-content: space-between;
+justify-content: space-around;
+align-items: center;
 width: 900px;
 height: 632px;
-margin-left: 2500px;
+margin: 0 auto;
+right: 100px;
 
 
 }
 .section-img2{
  position: relative;
-justify-content: space-between;
+justify-content:  space-around;
+align-items: center;
 width: 440px;
 height: 428px;
-margin-left: 3280px;
+margin: 0 auto;
+left:420px ;
 top: -430px;
 
 
@@ -45,10 +49,12 @@ top: -430px;
 display: block;
 position: relative;
 justify-content: space-between;
+align-items: center;
 width: 436px;
 height: 352px;
-margin-left:2825px;
 top: -380px;
+margin: 0px auto;
+
 
 }
 .button1{
