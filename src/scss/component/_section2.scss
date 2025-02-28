@@ -32,14 +32,16 @@
   }
 }
 
-.textbox {
+.textcont {
   width: 80%;
   margin: 0 auto;
   gap: 64px;
+
   &__header {
     font: 500 100px 'DM Sans', sans-serif;
     color: white;
   }
+
   &__button {
     width: 153px;
     height: 48px;
