@@ -23,23 +23,26 @@
    }
 }
 .section-img1{
-display: block;
 position: relative;
-justify-content: space-between;
-width: 712px;
+justify-content: space-around;
+align-items: center;
+width: 900px;
 height: 632px;
-margin-left: 2000px;
+margin: 0 auto;
+right: 100px;
+top:136px;
 
 
 }
 .section-img2{
- display: block;
  position: relative;
-justify-content: space-between;
+justify-content:  space-around;
+align-items: center;
 width: 440px;
 height: 428px;
-margin-left: 2780px;
-top: -430px;
+margin: 0 auto;
+left:420px ;
+top: -294px;
 
 
 }
@@ -47,13 +50,19 @@ top: -430px;
 display: block;
 position: relative;
 justify-content: space-between;
+align-items: center;
+object-fit: cover; // Зображення не спотворюється, але може обрізатися
+    border-radius: 15px; 
 width: 436px;
 height: 352px;
-margin-left:2325px;
-top: -380px;
+top: -216px;
+margin: 0px auto;
+
 
 }
 .button1{
+  font-family: "DM Sans";
+  font-weight: 700;
   position: absolute;
   width: 106px;
   height: 48px;
@@ -64,6 +73,8 @@ top: -380px;
 }
 
 .button2{
+  font-family: "DM Sans";
+  font-weight: 700;
      position: absolute;
      width: 106px;
      height: 48px;
@@ -72,6 +83,8 @@ top: -380px;
      left: 50px;
 }
 .button3{
+  font-family: "DM Sans";
+  font-weight: 700;
   position: absolute;
   width: 106px;
   height: 48px;
