@@ -1,0 +1,52 @@
+.description {
+  flex-direction: column;
+}
+.imgbox {
+  display: grid;
+  grid-template-columns: 533px 308px;
+  grid-template-rows: 473px 244px;
+  gap: 32px;
+  justify-content: center;
+  &__yacht {
+    outline: 1px solid red;
+    &:nth-child(1) {
+      width: 308px;
+      height: 289px;
+      grid-column: 2;
+      grid-row: 1;
+      align-self: start;
+    }
+    &:nth-child(2) {
+      width: 533px;
+      height: 473px;
+      grid-column: 1;
+      grid-row: 1 / span 2;
+    }
+    &:nth-child(3) {
+      width: 260px;
+      height: 244px;
+      grid-column: 2;
+      grid-row: 2;
+      align-self: end;
+    }
+  }
+}
+
+.textbox {
+  width: 80%;
+  margin: 0 auto;
+  gap: 64px;
+  &__header {
+    font: 500 100px 'DM Sans', sans-serif;
+    color: white;
+  }
+  &__button {
+    width: 153px;
+    height: 48px;
+    border-radius: 60px;
+    border: 1px solid white;
+    background: none;
+    font: 700 18px 'DM Sans', sans-serif;
+    color: white;
+  }
+}
