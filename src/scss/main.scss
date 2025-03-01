@@ -1,18 +1,69 @@
 // @import 'node_modules/modern-normalize/modern-normalize.css';
 
-// @use "./utils/_mixins.scss" as *;
-// @use "./utils/_variables.scss" as *;
-// @use "./utils/_placeholder.scss" as *;
+// @import url('./scss/utils/_mixins.scss');
+// @import url('./scss/utils/_variables.scss');
+// @import url('./scss/utils/_placeholders.scss');
+// @import url('./scss/utils/_base.scss');
 
-@import url('./utils/_mixins.scss');
-@import url('./utils/_variables.scss');
-@import url('./utils/_placeholders.scss');
-@import url('./utils/_base.scss');
+// @use '/scss/utils/_mixins.scss';
+// @use '/scss/utils/_variables.scsяs';
+// @use '/scss/utils/_placeholders.яscss';
+// @use '/scss/utils/_base.scss';
 
-@import url('./component/_section1.scss');
-@import url('./component/_section2.scss');
-@import url('./component/_section3.scss');
-@import url('./component/_section4.scss');
-@import url('./component/_section5.scss');
-@import url('./component/_section6.scss');
-@import url('./component/_footer.scss');
+@import url(./component/_header.scss);
+@import url(./component/_section1.scss);
+@import url(./component/_section2.scss);
+@import url(./component/_section3.scss);
+@import url(./component/_section4.scss);
+@import url(./component/_section5.scss);
+@import url(./component/_section6.scss);
+@import url(./component/_footer.scss);
+
+body,
+html {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  min-height: 580px !important;
+  background: #11131f !important;
+  //   overflow-x: hidden !important;
+  font-family: 'DM Sans', sans-serif !important;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+html {
+  outline: 2px solid green;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none !important;
+  user-select: none;
+}
+
+.container {
+  width: 90vw !important;
+  width: 1800px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  outline: 2px solid red;
+  // overflow: hidden !important;
+}
+
+::before,
+::after {
+  content: '';
+  position: absolute;
+}
+
+button {
+  cursor: pointer;
+}

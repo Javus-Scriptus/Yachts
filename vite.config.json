@@ -1,0 +1,16 @@
+{
+  "base": "/yachts/", 
+  "build": {
+    "outDir": "dist",
+    "assetsDir": "assets",
+    "rollupOptions": {
+      "output": {
+        "manualChunks": null
+      }
+    }
+  },
+    "server": {
+    "port": 3000,
+    "open": true
+  }
+}

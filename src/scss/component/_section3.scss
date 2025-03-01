@@ -1,218 +1,293 @@
-@use '/scss/utils/_placeholders.scss';
-@use '/scss/utils/_mixins.scss';
-@use '/scss/utils/_variables.scss';
-@use '/scss/utils/_base.scss';
+// @use '/scss/utils/_placeholders.scss';
+// @use '/scss/utils/_mixins.scss';
+// @use '/scss/utils/_variables.scss';
+// @use '/scss/utils/_base.scss';
 
-// section {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   height: 100vh;
-//   width: 100vw;
-// }
+// TODO mobile
+@media screen and (min-width: 320px) {
+  .swiper {
+    width: 100%;
+    max-width: 80vw;
+    height: 85vh;
+  }
 
-.swiper {
-  width: 90vw;
-  height: 70vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow-y: scroll;
-  transition: all 0.7s ease-in-out;
-
-    &:hover {
-      transform: scale(0.9);
-    }
-}
-
-swiper-container {
-  display: flex;
-  height: 70vh;
-  width: 90vw;
-  margin-left: auto;
-  margin-right: auto;
-  outline: 2px solid red;
-
-  swiper-slide {
-    overflow: hidden;
-    position: relative;
-    width: 29%;
-    height: 100%;
+  .swiper-slide {
+    background-repeat: no-repeat; //placeholder
+    background-position: center center; //placeholder
+    background-size: cover; //placeholder
+    background-clip: content-box; //placeholder
+    object-fit: cover; //placeholder
+    // @extend %bg-styles;
+    margin-top: 3vh;
+    padding-top: 2.5vh;
+    border-radius: 5px;
+    transition: all 0.7s ease-in-out;
     background: #1f212d;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 5%;
     border-radius: 5%;
+    height: 75vh !important;
+    cursor: default;
+  }
 
-    .yacht__img {
+  span.swiper-pagination-bullet-active {
+    width: 7px;
+    height: 7px;
+    background-color: #f6f5ef !important;
+    opacity: 0.6;
+  }
+
+  span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #f6f5ef !important;
+  }
+
+  .swiper-button-prev::after {
+    position: relative;
+    height: 1px !important;
+    width: 1px !important;
+    color: #f6f5ef;
+    top: 1.5vh;
+    right: 3.9vw;
+  }
+
+  .swiper-button-next::after {
+    position: relative;
+    height: 1px !important;
+    width: 1px !important;
+    color: #f6f5ef;
+    top: 1.5vh;
+    right: 0.3vw;
+  }
+
+  // section styles
+  .yacht {
+    &__pic {
       display: block;
-      width: 100%;
-      height: 58%;
+      width: 85%;
+      height: 52%;
       border-radius: 10%;
-      margin-left: auto;
       margin-right: auto;
       object-fit: cover;
+      margin-bottom: 5vh;
     }
-  }
-  // .swiper-wrapper {
-  //   display: flex;
-  //   width: 100%;
-  //   height: 100%;
-  // }
-}
 
-.yacht {
-  //   background: #11131f;
-  width: 100vw;
-
-  &__cards {
-    width: 33%;
-    height: 60vh;
-    background: #1f212d;
-    display: flex;
-    flex-direction: column;
-    gap: 5%;
-    border-radius: 5%;
-  }
-
-  &__pic {
-    width: 100%;
-    height: 100%;
-    border-radius: 10%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  &__img {
-    width: 100%;
-    height: 58%;
-    border-radius: 10%;
-    margin-left: auto;
-    margin-right: auto;
-    object-fit: cover;
-  }
-
-  &__name {
-    width: 93%;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  &__heading {
-    @extend %regular-text;
-    overflow: hidden;
-    color: #f6f5ef;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 120%;
-    letter-spacing: -0.72px;
-    text-transform: uppercase;
-  }
-
-  &__subheading {
-    // @extend %regular-text;
-    color: #f6f5ef;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 118%;
-    letter-spacing: 0.36px;
-    text-transform: uppercase;
-  }
-
-  &__type {
-    // @extend %regular-text;
-    color: #f6f5ef;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 118%;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
-  }
-
-  &__stats {
-    // @extend %regular-text;
-    color: #f6f5ef;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 118%;
-    letter-spacing: 0.42px;
-  }
-}
-
-.description {
-  outline: 2px solid red;
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  gap: 12%;
-}
-
-//TODO desktop
-@media screen and (min-width: 1248px) {
-  .yacht {
-    display: flex;
-    gap: 1.25vw;
-    width: 100%;
-
-    &__cards {
-      width: 33%;
-      height: 60vh;
-      background: #1f212d;
+    &__name {
+      margin-bottom: 4vh;
+      margin-left: 9.5vw;
+      align-items: center;
+      justify-content: center;
       display: flex;
-      flex-direction: column;
-      gap: 5%;
-      border-radius: 5%;
-    }
-  }
-
-  //TODO tablet
-  @media screen and (min-width: 768px) {
-    .catalog {
-      //   background: #11131f;
-      width: 100vw;
+      text-transform: uppercase;
+      justify-content: space-between;
     }
 
-    .yacht {
+    &__heading {
+      font-family: 'DM Sans' sans-serif; //placeholder
+      font-size: 16px; // placeholder
+      font-weight: 400; // placeholder
+      line-height: 140%; // placeholder
+      letter-spacing: 0.3px; // placeholder
+      color: #f6f5ef; // placeholder
+      letter-spacing: 0.42px; // placeholder
+      // @extend %regular-text;
+      font-size: 15px;
+    }
+
+    &__subheading {
+      font-family: 'DM Sans' sans-serif; //placeholder
+      font-size: 16px; // placeholder
+      font-weight: 400; // placeholder
+      line-height: 140%; // placeholder
+      letter-spacing: 0.3px; // placeholder
+      color: #f6f5ef; // placeholder
+      letter-spacing: 0.42px; // placeholder
+      // @extend %regular-text;
+      font-size: 13px;
+      margin-right: 13vw;
+    }
+
+    .description {
+      margin-left: 2.5vw;
       display: flex;
-      gap: 1.25vw;
-      width: 100%;
+      font-family: 'DM Sans' sans-serif; //placeholder
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 140%;
+      letter-spacing: 0.3px;
+      color: #f6f5ef;
+      letter-spacing: 0; // placeholder.42px;
+      gap: 10vw;
+      // @extend %regular-text;
+      font-size: 14px;
+      line-height: 185%;
 
-      &__cards {
-        width: 50%;
-        height: 60vh;
-        background: #1f212d;
-        display: flex;
-        flex-direction: column;
-        gap: 5%;
-        border-radius: 5%;
+      &__product {
+        text-transform: uppercase;
       }
     }
+
+    .description {
+      font-size: 12.5px;
+      line-height: 200%;
+      margin-left: 9.5vw;
+    }
+    &__stats {
+      line-height: 60%;
+      font-size: 14px;
+      margin-top: 1vh;
+    }
   }
 }
 
-//TODO mobile
-@media screen and (min-width: 320px) {
-  .yacht {
-    display: flex;
-    gap: 1.25vw;
-    width: 100%;
+//TODO mobile 2.0
+@media screen and (min-width: 610px) {
+  .swiper {
+    max-width: 66vw;
+  }
 
-    &__cards {
-      width: 100%;
-      height: 60vh;
-      background: #1f212d;
-      display: flex;
-      flex-direction: column;
-      gap: 5%;
-      border-radius: 5%;
+  .swiper-button-prev::after {
+    right: 3.1vw;
+  }
+}
+
+//TODO tablet
+@media screen and (min-width: 768px) {
+  .swiper-button-prev::after {
+    position: relative;
+    height: 1px !important;
+    width: 1px !important;
+    color: #f6f5ef;
+    right: 2.4vw;
+    top: 2.5vh;
+  }
+
+  .swiper-button-next::after {
+    position: relative;
+    height: 1px !important;
+    width: 1px !important;
+    color: #f6f5ef;
+    right: 0.3vw;
+    top: 2.5vh;
+  }
+
+  .swiper {
+    width: 100%;
+    max-width: 95vw;
+    height: 85vh;
+  }
+
+  .swiper-slide {
+    height: 75vw;
+  }
+
+  .yacht {
+    .benetti {
+      margin-right: 0.5vw;
     }
+
+    &__name {
+      margin-bottom: 4vh;
+      margin-left: 5vw;
+    }
+
+    &__heading {
+      font-size: 15px;
+    }
+
+    &__subheading {
+      font-size: 13px;
+      margin-right: 5vw;
+    }
+
+    .description {
+      font-size: 12.5px;
+      line-height: 180%;
+      margin-left: 5vw;
+      gap: 3.36vw;
+    }
+
+    &__stats {
+      line-height: 120%;
+      font-size: 14.5px;
+      margin-top: 0.8vh;
+      margin-left: 2vw;
+    }
+  }
+}
+
+// TODO desktop
+@media screen and (min-width: 1024px) {
+  .swiper-button-prev::after {
+    position: relative;
+    height: 1px !important;
+    width: 1px !important;
+    color: #f6f5ef;
+    right: 1vw;
+  }
+
+  .swiper-button-next::after {
+    position: relative;
+    height: 1px !important;
+    width: 1px !important;
+    color: #f6f5ef;
+    right: 0.3vw;
+  }
+
+  .swiper {
+    width: 100%;
+    max-width: 1650px;
+    height: 82vh;
+  }
+
+  .swiper-slide {
+    margin-top: 0.3vh;
+  }
+
+  .yacht {
+    .benetti {
+      margin-right: 2.5vw;
+    }
+
+    &__name {
+      margin-left: 2.5vw;
+      margin-bottom: 7vh;
+    }
+
+    &__heading {
+      font-size: 17px;
+      font-weight: 600;
+    }
+
+    &__subheading {
+      font-size: 13.5px;
+      opacity: 0.7;
+      margin-right: 3vw;
+    }
+
+    .description {
+      margin-left: 2.5vw;
+      font-size: 14px;
+      line-height: 185%;
+      gap: 1.5vw;
+    }
+
+    &__type {
+      line-height: 180%;
+    }
+
+    &__stats {
+      position: relative;
+      font-size: 15.5px;
+      line-height: 150%;
+      bottom: 0.5vh;
+    }
+  }
+}
+
+// TODO  height adaptive
+@media screen and (min-height: 0px) and (max-height: 600px) {
+  .swiper {
+    height: 110vh;
+  }
+  .swiper-slide {
+    height: 100vh !important;
   }
 }
