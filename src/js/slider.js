@@ -1,14 +1,13 @@
 const swiper = new Swiper('.swiper', {
-  loop: false,
+  loop: true,
   centeredSlides: true,
   direction: 'horizontal',
   lazyloading: true,
-  // effect: 'fade',
-  freeMode: false,
-  autoplay: {
-    delay: 5000,
-    disableOnInteraction: false,
-  },
+  freeMode: true,
+  // autoplay: {
+  //   delay: 5000,
+  //   disableOnInteraction: false,
+  // },
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
@@ -42,10 +41,10 @@ menuBtn.addEventListener('click', () => {
   if (!menuOpen) {
     menuBtn.classList.add('open');
     menuOpen = true;
-    document.getElementById('nav-bar').style.height = '100%';
+    document.getElementById('header__nav').style.height = '100%';
   } else {
     menuBtn.classList.remove('open');
     menuOpen = false;
-    document.getElementById('nav-bar').style.height = '0%';
+    document.getElementById('header__nav').style.height = '0%';
   }
 });
