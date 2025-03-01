@@ -23,19 +23,21 @@
    }
 }
 .section-img1{
-display: block;
 position: relative;
 justify-content: space-between;
 width: 712px;
 height: 632px;
-margin-left: -300px;
+margin: 0 auto;
+right: 100px;
+top:136px;
 
 
 }
 .section-img2{
  display: block;
  position: relative;
-justify-content: space-between;
+justify-content:  space-around;
+align-items: center;
 width: 440px;
 height: 428px;
 margin-left: 64px;
@@ -46,6 +48,9 @@ margin-left: 64px;
 display: block;
 position: relative;
 justify-content: space-between;
+align-items: center;
+object-fit: cover; // Зображення не спотворюється, але може обрізатися
+    border-radius: 15px; 
 width: 436px;
 height: 352px;
 margin-top: 1100px;
