@@ -1,5 +1,4 @@
 const swiper = new Swiper('.swiper', {
-  loop: true,
   centeredSlides: true,
   direction: 'horizontal',
   lazyloading: true,
@@ -23,14 +22,17 @@ const swiper = new Swiper('.swiper', {
     320: {
       slidesPerView: 1,
       spaceBetween: 50,
+      loop: false
     },
     768: {
       slidesPerView: 2,
       spaceBetween: 30,
+      loop: true
     },
     1024: {
       slidesPerView: 3,
       spaceBetween: 40,
+      loop: true
     },
   },
 });
