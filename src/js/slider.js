@@ -1,14 +1,12 @@
 const swiper = new Swiper('.swiper', {
-  loop: false,
   centeredSlides: true,
   direction: 'horizontal',
   lazyloading: true,
-  // effect: 'fade',
-  freeMode: false,
-  autoplay: {
-    delay: 5000,
-    disableOnInteraction: false,
-  },
+  freeMode: true,
+  // autoplay: {
+  //   delay: 5000,
+  //   disableOnInteraction: false,
+  // },
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
@@ -24,14 +22,17 @@ const swiper = new Swiper('.swiper', {
     320: {
       slidesPerView: 1,
       spaceBetween: 50,
+      loop: false
     },
     768: {
       slidesPerView: 2,
       spaceBetween: 30,
+      loop: true
     },
     1024: {
       slidesPerView: 3,
       spaceBetween: 40,
+      loop: true
     },
   },
 });
@@ -42,10 +43,10 @@ menuBtn.addEventListener('click', () => {
   if (!menuOpen) {
     menuBtn.classList.add('open');
     menuOpen = true;
-    document.getElementById('nav-bar').style.height = '100%';
+    document.getElementById('header__nav').style.height = '100%';
   } else {
     menuBtn.classList.remove('open');
     menuOpen = false;
-    document.getElementById('nav-bar').style.height = '0%';
+    document.getElementById('header__nav').style.height = '0%';
   }
 });

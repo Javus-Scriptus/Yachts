@@ -12,19 +12,14 @@
   }
 
   .swiper-slide {
-    background-repeat: no-repeat; //placeholder
-    background-position: center center; //placeholder
-    background-size: cover; //placeholder
-    background-clip: content-box; //placeholder
-    object-fit: cover; //placeholder
-    // @extend %bg-styles;
-    margin-top: 3vh;
-    padding-top: 2.5vh;
+    // margin-top: 3vh;
+    padding-top: 30px;
     border-radius: 5px;
     transition: all 0.7s ease-in-out;
     background: #1f212d;
     border-radius: 5%;
     height: 75vh !important;
+
     cursor: default;
   }
 
@@ -64,9 +59,10 @@
       width: 85%;
       height: 52%;
       border-radius: 10%;
-      margin-right: auto;
+      margin: 0 auto;
       object-fit: cover;
       margin-bottom: 5vh;
+      // outline: 2px solid red;
     }
 
     &__name {
@@ -107,6 +103,7 @@
     .description {
       margin-left: 2.5vw;
       display: flex;
+      // flex-direction: column;
       font-family: 'DM Sans' sans-serif; //placeholder
       font-size: 16px;
       font-weight: 400;
@@ -114,21 +111,28 @@
       letter-spacing: 0.3px;
       color: #f6f5ef;
       letter-spacing: 0; // placeholder.42px;
-      gap: 10vw;
-      // @extend %regular-text;
       font-size: 14px;
       line-height: 185%;
+      font-size: 12.5px;
+      line-height: 200%;
+      margin-left: 9.5vw;
+      gap: 10vw;
+      // @extend %regular-text;
 
       &__product {
         text-transform: uppercase;
       }
+
+      &__statistics {
+        // max-width: 100%;
+        width: 80px 1 !important;
+      }
     }
 
-    .description {
-      font-size: 12.5px;
-      line-height: 200%;
-      margin-left: 9.5vw;
+    &__type {
+      width: 70px;
     }
+
     &__stats {
       line-height: 60%;
       font-size: 14px;
@@ -238,7 +242,9 @@
   }
 
   .swiper-slide {
+    height: 640px !important;
     margin-top: 0.3vh;
+    // width: 430px !important;
   }
 
   .yacht {

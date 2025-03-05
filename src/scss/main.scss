@@ -33,6 +33,17 @@ html {
   }
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  max-width: 100%;
+}
+
 html {
   outline: 2px solid green;
 }
