@@ -1,14 +1,52 @@
 <section class="section4">
-     <div class="section-img1">
-          <img src="./img/section4/draiver.jpg" alt="">  
-          <button class="button1">Diving</button>
-     </div>
-     <div class="section-img2">
-          <img src="./img/section4/fish.jpg" alt="">
-          <button class="button2">Fishing</button>
-     </div>
-     <div class="section-img3">
-          <img src="./img/section4/sunbathing.jpg" alt="">
-          <button class="button3">sunbathing</button>
-     </div>
-</section>
+     <ul class="sealist">
+          <li class="sealist__diving">
+               <picture class="sealist__diving--picture">
+                    <source srcset="./img/section4/draiver.jpg 1x, ./img/section4/draiver@2x.jpg 2x"
+                         media="(max-width: 420px)">
+                       
+                    <source srcset="./img/section4/draiver.jpg 1x, ./img/section4/draiver@2x.jpg 2x"
+                         media="(min-width: 421px) and (max-width: 768px)">
+                       
+                    <source srcset="./img/section4/draiver.jpg 1x, ./img/section4/draiver@2x.jpg 2x"
+                         media="(min-width: 769px)">
+                        <img src="./img/section4/draiver.jpg" srcset="./img/section4/draiver@2x.jpg 2x"
+                         alt="img_driver">
+               </picture>
+               <button class="sealist__diving--button">Diving</button>
+          </li>
+     </ul>
+     <ul class="sealist">
+          <li class="sealist__fishing">
+               <picture class="sealist__fishing--picture">
+                    <source srcset="./img/section4/fish.jpg 1x, ./img/section4/fish@2x.jpg 2x"
+                         media="(max-width: 420px)">
+                       
+                    <source srcset="./img/section4/fish.jpg 1x, src/img/section4/fish@2x.jpg 2x"
+                         media="(min-width: 421px) and (max-width: 768px)">
+                       
+                    <source srcset="./img/section4/fish.jpg 1x, src/img/section4/fish@2x.jpg 2x"
+                         media="(min-width: 769px)">
+                        <img src="./img/section4/fish.jpg" srcset="src/img/section4/fish@2x.jpg 2x"
+                         alt="img_fishing">
+               </picture>
+               <button class="sealist__fishing--button">Fishing</button>
+          </li>
+     </ul>
+     <ul class="sealist">
+          <li class="sealist__sunbathing">
+               <picture class="sealist__sunbathing--picture">
+                    <source srcset="./img/section4/sunbathing.jpg 1x, ./img/section4/sunbathing@2x.jpg 2x"
+                         media="(max-width: 420px)">
+                       
+                    <source srcset="./img/section4/sunbathing.jpg 1x, ./img/section4/sunbathing@2x.jpg 2x"
+                         media="(min-width: 421px) and (max-width: 768px)">
+                       
+                    <source srcset="./img/section4/sunbathing.jpg 1x, ./img/section4/sunbathing@2x.jpg 2x"
+                         media="(min-width: 769px)">
+                        <img src="./img/section4/sunbathing.jpg" srcset="./img/section4/sunbathing@2x.jpg 2x"
+                         alt="img_sunbathing">
+               </picture>
+               <button class="sealist__sunbathing--button">Sunbathing</button>
+          </li>
+     </ul>
