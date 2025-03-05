@@ -5,19 +5,19 @@
 // @import url('./scss/utils/_placeholders.scss');
 // @import url('./scss/utils/_base.scss');
 
-// @use '/scss/utils/_mixins.scss';
-// @use '/scss/utils/_variables.scsяs';
-// @use '/scss/utils/_placeholders.яscss';
-// @use '/scss/utils/_base.scss';
+@use '/scss/abstract/_mixins.scss';
+@use '/scss/abstract/_variables.scss';
+@use '/scss/abstract/_placeholders.scss';
+@use '/scss/abstract/_base.scss';
 
-@import url(./component/_header.scss);
+@import url(./layout/_header.scss);
 @import url(./component/_section1.scss);
 @import url(./component/_section2.scss);
 @import url(./component/_section3.scss);
 @import url(./component/_section4.scss);
 @import url(./component/_section5.scss);
 @import url(./component/_section6.scss);
-@import url(./component/_footer.scss);
+@import url(./layout/_footer.scss);
 
 body,
 html {

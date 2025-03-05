@@ -4,7 +4,7 @@ import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
 
 export default defineConfig({
-  base: '/yachts/',
+  base: '/Yachts/',
   root: 'src',
   build: {
     rollupOptions: {

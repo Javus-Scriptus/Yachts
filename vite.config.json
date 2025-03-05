@@ -1,5 +1,5 @@
 {
-  "base": "/yachts/", 
+  "base": "/Yachts/", 
   "build": {
     "outDir": "dist",
     "assetsDir": "assets",
