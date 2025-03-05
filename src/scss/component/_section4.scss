@@ -1,95 +1,88 @@
-.section__4 {
-     background-image: url("../img/section4/draiver.jpg");
-    
-   @media (min-device-pixel-ratio: 2),
-   (-webkit-min-device-pixel-ratio: 2),
-   (min-resolution: 192dpi),
-   (min-resolution: 2dppx) {
-       .section__4 {
-               background-image: url("../img-ret@2x/draiverx2.jpg");
-       }
-   }
-}
-.section__4 {
-     background-image: url("../img/section4/fish.jpg");
-    
-   @media (min-device-pixel-ratio: 2),
-   (-webkit-min-device-pixel-ratio: 2),
-   (min-resolution: 192dpi),
-   (min-resolution: 2dppx) {
-       .section__4 {
-               background-image: url("../img-ret@2x/fishx2.jpg");
-       }
-   }
-}
-.section-img1{
-position: relative;
-justify-content: space-around;
-align-items: center;
-width: 900px;
-height: 632px;
-margin: 0 auto;
-right: 100px;
-top:136px;
-
-
-}
-.section-img2{
- position: relative;
-justify-content:  space-around;
-align-items: center;
-width: 440px;
-height: 428px;
-margin: 0 auto;
-left:420px ;
-top: -294px;
-
-
-}
-.section-img3{
-display: block;
-position: relative;
-justify-content: space-between;
-align-items: center;
-object-fit: cover; // Зображення не спотворюється, але може обрізатися
-    border-radius: 15px; 
-width: 436px;
-height: 352px;
-top: -216px;
-margin: 0px auto;
-
-
-}
-.button1{
-  font-family: "DM Sans";
-  font-weight: 700;
-  position: absolute;
-  width: 106px;
-  height: 48px;
-  border-radius: 40px;
-  top: 550px;
-  left: 50px;
-
+.section4 {
+  margin: 0 32px;
 }
 
-.button2{
-  font-family: "DM Sans";
-  font-weight: 700;
-     position: absolute;
-     width: 106px;
-     height: 48px;
-     border-radius: 40px;
-     top: 350px;
-     left: 50px;
-}
-.button3{
-  font-family: "DM Sans";
-  font-weight: 700;
-  position: absolute;
-  width: 106px;
-  height: 48px;
-  border-radius: 40px;
-  top: 270px;
-  left: 50px;
+.sealist {
+  &__diving {
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    // left: 864px;
+    margin: 0 auto;
+    &--picture {
+      width: 900px;
+      height: 632px;
+      img {
+        border-radius: 40px;
+      }
+    }
 
+    &--button {
+      font-family: "DM Sans";
+      font-weight: 800;
+      position: absolute;
+      width: 106px;
+      height: 48px;
+      border-radius: 40px;
+      top: 538px;
+      left: 82px;
+    }
+  }
 }
+.sealist {
+  &__fishing {
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    &--picture {
+      width: 900px;
+      height: 632px;
+      img {
+        border-radius: 40px;
+      }
+    }
+
+    &--button {
+      font-family: "DM Sans";
+      font-weight: 800;
+      position: absolute;
+      width: 106px;
+      height: 48px;
+      border-radius: 40px;
+      top: 350px;
+      left: 82px;
+    }
+  }
+}
+.sealist {
+  &__sunbathing {
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    &--picture {
+      width: 900px;
+      height: 632px;
+      img {
+        border-radius: 40px;
+      }
+    }
+
+    &--button {
+      font-family: "DM Sans";
+      font-weight: 800;
+      position: absolute;
+      width: 106px;
+      height: 48px;
+      border-radius: 40px;
+      top: 275px;
+      left: 82px;
+    }
+  }
+}
+
+
+
+
+
