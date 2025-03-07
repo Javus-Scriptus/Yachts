@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Demo of Scroll.js</title>
+    <style>
+        html, body {
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            border: 0;
+        }
+        .scroll-wrap {
+            position: relative;
+            height: 100%;
+            overflow: hidden;
+        }
+        .test-div {
+            font-size: 32px;
+            text-align: center;
+            border: 1px solid #666;
+        }
+    </style>
+    <script src="../dist/Skroll.js"></script>
+    <script data-main="./test-comparison.js" src="./lib/require.js"></script>
+</head>
+<body>
+    <div class="scroll-wrap">
+        <div id="div1" style="position:relative;left:0;font-size:0;"></div>
+    </div>
+</body>
+</html>
