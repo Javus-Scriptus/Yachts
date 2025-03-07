@@ -224,6 +224,7 @@
             gap: 14.648vw;
             margin: 0 3.125vw;
             margin-bottom: 7.813vw;
+            padding-top: 8.333vw;
         }
     }
 
@@ -265,6 +266,7 @@
             flex-flow: column-reverse;
             margin: 0;
             padding: 0;
+            padding-top: 8.333vw;
         }
     }
 
@@ -374,6 +376,12 @@
 }
 
 @media (max-width: 767px) {
+    .section1 {
+        &__container {
+            padding-top: 8.333vw;
+        }
+    }
+
     .card {
         width: 70%;
         height: 100vw;
@@ -477,6 +485,7 @@
 }
 
 @media (max-width: 540px) {
+
     .card {
         width: 80%;
 
@@ -524,6 +533,12 @@
 }
 
 @media (max-width: 375px) {
+    .section1 {
+        &__container {
+            padding-top: 10.667vw;
+        }
+    }
+
     .card {
         &__picturebox {
 
