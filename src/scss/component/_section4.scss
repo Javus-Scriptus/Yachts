@@ -6,16 +6,17 @@
   &__diving {
     position: relative;
     justify-content: space-around;
-    align-items: center;
-    // left: 864px;
+    align-items: center;  
     margin: 0 auto;
     &--picture {
       width: 900px;
       height: 632px;
       img {
         border-radius: 40px;
+        margin-left: 600px;
       }
     }
+   
 
     &--button {
       font-family: "DM Sans";
@@ -25,7 +26,7 @@
       height: 48px;
       border-radius: 40px;
       top: 538px;
-      left: 82px;
+      left: 782px;
     }
   }
 }
@@ -35,6 +36,8 @@
     justify-content: space-around;
     align-items: center;
     margin: 0 auto;
+    margin-top: -432px;
+    margin-left: 1363px;
     &--picture {
       width: 900px;
       height: 632px;
@@ -81,6 +84,11 @@
     }
   }
 }
+
+
+
+
+
 
 
 
