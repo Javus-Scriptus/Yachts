@@ -49,9 +49,9 @@ a {
 }
 
 .container {
-  width: 90vw;
-  width: 98.9vw;
-  width: 1234px;
+  // width: 90vw;
+  // width: 98.9vw;
+  // width: 1234px;
   display: flex;
   margin: 0 auto;
   justify-content: center;
@@ -62,21 +62,21 @@ a {
 
 @media screen and (max-width: 320px) {
   .container {
-    width: 335px;
+    // width: 335px;
     width: 89.33vw;
   }
 }
 
 @media screen and (max-width: 768px) {
   .container {
-    width: 704px;
+    // width: 704px;
     width: 91.7vw;
   }
 }
 
 @media screen and (max-width: 1024px) {
   .container {
-    width: 335px;
+    // width: 335px;
     width: 89.33vw;
   }
 }
