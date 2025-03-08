@@ -1,13 +1,37 @@
 .container {
-  width: 90vw !important;
-  width: 1800px;
+  // width: 90vw;
+  // width: 98.9vw;
+  // width: 1234px;
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  // justify-content: space-between;
   justify-content: center;
   align-items: center;
   outline: 2px solid red;
+  height: auto;
   // overflow: hidden !important;
+}
+
+@media screen and (min-width: 320px) {
+  .container {
+    // width: 335px;
+    width: 89.33vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    // width: 704px;
+    width: 91.7vw;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    // width: 335px;
+    width: 89.33vw;
+  }
 }
 
 button {
@@ -46,37 +70,4 @@ a {
   list-style-type: none;
   text-decoration: none;
   user-select: none;
-}
-
-.container {
-  // width: 90vw;
-  // width: 98.9vw;
-  // width: 1234px;
-  display: flex;
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
-  outline: 2px solid red;
-  // overflow: hidden !important;
-}
-
-@media screen and (max-width: 320px) {
-  .container {
-    // width: 335px;
-    width: 89.33vw;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .container {
-    // width: 704px;
-    width: 91.7vw;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .container {
-    // width: 335px;
-    width: 89.33vw;
-  }
 }
