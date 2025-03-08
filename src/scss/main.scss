@@ -1,92 +1,22 @@
 // @import 'node_modules/modern-normalize/modern-normalize.css';
 
-// @import url('./scss/utils/_mixins.scss');
-// @import url('./scss/utils/_variables.scss');
-// @import url('./scss/utils/_placeholders.scss');
-// @import url('./scss/utils/_base.scss');
+// @use '/scss/abstracts/_mixins.scss';
+// @use '/scss/abstracts/_variables.scss';
+// @use '/scss/abstracts/_placeholders.scss';
+// @use '/scss/abstracts/_base.scss';
 
-@use '/scss/abstract/_mixins.scss';
-@use '/scss/abstract/_variables.scss';
-@use '/scss/abstract/_placeholders.scss';
-@use '/scss/abstract/_base.scss';
+@import url(./abstracts/_base.scss);
+@import url(./abstracts/_variables.scss);
+@import url(./abstracts/_placeholders.scss);
+@import url(./abstracts/_mixins.scss);
 
 @import url(./layout/_header.scss);
-@import url(./component/_section1.scss);
-@import url(./component/_section2.scss);
-@import url(./component/_section3.scss);
-@import url(./component/_section4.scss);
-@import url(./component/_section5.scss);
-@import url(./component/_section6.scss);
+@import url(./pages/_section1.scss);
+@import url(./pages/_section2.scss);
+@import url(./pages/_section3.scss);
+@import url(./pages/_section4.scss);
+@import url(./pages/_section5.scss);
+@import url(./pages/_section6.scss);
 @import url(./layout/_footer.scss);
 
-body,
-html {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  min-height: 580px !important;
-  background: #11131f !important;
-  //   overflow-x: hidden !important;
-  font-family: 'DM Sans', sans-serif !important;
-  &::-webkit-scrollbar {
-    display: none;
-  }
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-a {
-  max-width: 100%;
-}
-
-html {
-  outline: 2px solid green;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-  text-decoration: none;
-  user-select: none;
-}
-
-.container {
-  width: 90vw;
-  // width: 1800px;
-  display: flex;
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
-  outline: 2px solid red;
-  // overflow: hidden !important;
-}
-
-
-@media screen and (max-width: 320px) {
-  
-}
-
-@media screen and (max-width: 768px) {
-  
-}
-
-@media screen and (max-width: 1024px) {
-  
-}
-
-::before,
-::after {
-  content: '';
-  position: absolute;
-}
-
-button {
-  cursor: pointer;
-}
+@import url(./components/_popup.scss);

@@ -1,7 +1,12 @@
-@use '/scss/abstract/_mixins.scss';
-@use '/scss/abstract/_variables.scss';
-@use '/scss/abstract/_placeholders.scss';
-@use '/scss/abstract/_base.scss';
+// @import url(./abstracts/_mixins.scss);
+// @import url(./abstracts/_variables.scss);
+// @import url(./abstracts/_placeholders.scss);
+// @import url(./abstracts/_base.scss);
+
+@use '/scss/abstracts/_mixins.scss';
+@use '/scss/abstracts/_variables.scss';
+@use '/scss/abstracts/_placeholders.scss';
+@use '/scss/abstracts/_base.scss';
 
 // TODO mobile
 @media screen and (min-width: 320px) {

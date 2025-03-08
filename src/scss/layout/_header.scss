@@ -1,3 +1,8 @@
+@use '/scss/abstracts/_mixins.scss';
+@use '/scss/abstracts/_variables.scss';
+@use '/scss/abstracts/_placeholders.scss';
+@use '/scss/abstracts/_base.scss';
+
 .header {
   border-bottom: 1px solid;
   display: flex;
@@ -6,17 +11,8 @@
   padding: 20px 4%;
   background-color: #24252a;
 
-  &__logo--cont {
-    color: #edf0f1;
+  &__logo {
     margin-right: auto;
-    display: flex;
-    align-items: center;
-    font-size: 17px;
-    font-weight: 700;
-    text-transform: uppercase;
-  }
-
-  &__icon {
     width: 25px;
     height: 25px;
   }
