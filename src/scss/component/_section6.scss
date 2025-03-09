@@ -1,3 +1,8 @@
+@use '/scss/abstract/_mixins.scss';
+@use '/scss/abstract/_variables.scss';
+@use '/scss/abstract/_placeholders.scss';
+@use '/scss/abstract/_base.scss';
+
 $color_1: var(--white, #F6F5EF);
 $color_2: rgba(246, 245, 239, 0.50);
 $color_3: #ffffff;
@@ -20,15 +25,7 @@ $font-family_1: "DM Sans";
 		opacity: 1;
 	}
 }
-* {
-	box-sizing: border-box;
-	&::after {
-		box-sizing: border-box;
-	}
-	&::before {
-		box-sizing: border-box;
-	}
-}
+
 .container__review {
 	max-width: 1226px;
 	padding: auto 10px;
@@ -48,7 +45,6 @@ $font-family_1: "DM Sans";
 	color: $color_1;
 	font-family: $font-family_1;
 	font-size: 32px;
-	font-style: normal;
 	font-weight: 500;
 	line-height: 120%;
 	letter-spacing: -1.44px;
@@ -61,7 +57,6 @@ $font-family_1: "DM Sans";
 	color: $color_1;
 	font-family: $font-family_1;
 	font-size: 16px;
-	font-style: normal;
 	font-weight: 400;
 	line-height: 140%;
 	letter-spacing: -0.32px;
@@ -101,7 +96,6 @@ $font-family_1: "DM Sans";
 	text-align: center;
 	font-family: $font-family_1;
 	font-size: 18px;
-	font-style: normal;
 	font-weight: 500;
 	line-height: 110%;
 	letter-spacing: -0.81px;
@@ -111,7 +105,6 @@ $font-family_1: "DM Sans";
 	text-align: center;
 	font-family: $font-family_1;
 	font-size: 16px;
-	font-style: normal;
 	font-weight: 400;
 	line-height: 140%;
 	letter-spacing: -0.32px;
