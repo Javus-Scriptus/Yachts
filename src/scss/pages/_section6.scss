@@ -1,7 +1,7 @@
-@use '/scss/abstract/_mixins.scss';
-@use '/scss/abstract/_variables.scss';
-@use '/scss/abstract/_placeholders.scss';
-@use '/scss/abstract/_base.scss';
+// @use '/scss/abstract/_mixins.scss';
+// @use '/scss/abstract/_variables.scss';
+// @use '/scss/abstract/_placeholders.scss';
+// @use '/scss/abstract/_base.scss';
 
 $color_1: var(--white, #F6F5EF);
 $color_2: rgba(246, 245, 239, 0.50);
@@ -26,12 +26,6 @@ $font-family_1: "DM Sans";
 	}
 }
 
-.container__review {
-	max-width: 1226px;
-	padding: auto 10px;
-	margin: 0 auto;
-}
-
 
 .review {
 	background: #11131f;
@@ -40,25 +34,23 @@ $font-family_1: "DM Sans";
 	background-position: center;
 	padding-bottom: 100px;
 	border-bottom: solid 1px #F6F5EF;
+	font-family: $font-family_1;
+	color: $color_1;
+	font-weight: normal;
 }
 .review__heading {
-	color: $color_1;
-	font-family: $font-family_1;
 	font-size: 32px;
 	font-weight: 500;
-	line-height: 120%;
+	line-height: 1.2;
 	letter-spacing: -1.44px;
 	width: 497px;
 	margin-right: 446px;
 	padding-left: 10px;
 }
 .review__text {
-	width: 273px;
-	color: $color_1;
-	font-family: $font-family_1;
+	width: 273px; 	
 	font-size: 16px;
-	font-weight: 400;
-	line-height: 140%;
+	line-height: 1.4;
 	letter-spacing: -0.32px;
 	padding-right: 10px;
 }
@@ -89,24 +81,17 @@ $font-family_1: "DM Sans";
 	width: 56px;
 	height: 56px;
 }
-
-
 .review__item-heading {
-	color: $color_1;
 	text-align: center;
-	font-family: $font-family_1;
 	font-size: 18px;
-	font-weight: 500;
-	line-height: 110%;
+	line-height: 1.1;
 	letter-spacing: -0.81px;
 }
 .review__item-text {
 	color: $color_2;
 	text-align: center;
-	font-family: $font-family_1;
 	font-size: 16px;
-	font-weight: 400;
-	line-height: 140%;
+	line-height: 1.4;
 	letter-spacing: -0.32px;
 	width: 300px;
 	align-items: center;
@@ -119,40 +104,6 @@ $font-family_1: "DM Sans";
 	position: relative;
 	right: -548px;
 	top: 64px;
-}
-.slick-dots {
-	button {
-		width: 16px;
-		height: 16px;
-		padding: 0;
-		border-radius: 50%;
-		border: 0;
-		background: #1F212D;
-		margin-right: 10px;
-		list-style: none;
-	}
-	display: flex;
-	position: relative;
-	top: 321px;
-	right: 369px;
-	list-style: none;
-	justify-content: center;
-	margin: 0 auto;
-	li {
-		button {
-			font-size: 0;
-		}
-	}
-}
-.slick-active {
-	button {
-		background: #88B3B9;
-		width: 50px;
-		height: 19px;
-		transition: .40s;
-		border-radius: 20px;
-		border: 1px solid #010A20;
-	}
 }
 @media (max-width:1200px) {
 	.accordion__button {
@@ -199,7 +150,6 @@ $font-family_1: "DM Sans";
 	h2 {
 		font-weight: 500;
 		font-size: 36px;
-		font-family: $font-family_1;
 		line-height: 39.6px;
 		color: $color_3;
 		text-align: left;
