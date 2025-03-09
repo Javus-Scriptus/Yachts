@@ -212,11 +212,11 @@ input[type='number']::-webkit-inner-spin-button {
 }
 .thanks__modal__send__yacht {
   position: absolute;
-  top: 5%;
-  left: 28%;
+  top: 50%;
+  left: 50%;
   background: #1f212d;
   color: white;
-  transform: translate(-28%, -5%);
+  transform: translate(-50%, -50%);
   border-radius: 20px;
   text-align: center;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
@@ -225,18 +225,12 @@ input[type='number']::-webkit-inner-spin-button {
   background-size: 400px;
   background-repeat: no-repeat;
   @media screen and (min-width: 768px) {
-    top: 5%;
-    left: 13.5%;
-    transform: translate(-50%, -50%);
     border-radius: 40px;
     background-position: bottom 30px right -30px;
     background-size: 600px;
   }
   @media screen and (min-width: 1199px) {
-    top: 5%;
-    left: 28%;
     background-position: bottom -0px right -30px;
-    transform: translate(-50%, -50%);
     background-size: 600px;
   }
 }
